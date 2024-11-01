@@ -5,8 +5,6 @@ import DGis
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	var window: UIWindow?
 
-	private let container = Container()
-
 	func scene(
 		_ scene: UIScene,
 		willConnectTo session: UISceneSession,
@@ -14,17 +12,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	) {
 		if let windowScene = scene as? UIWindowScene {
 			let window = UIWindow(windowScene: windowScene)
-			do {
-				let rootView = try self.container.makeRootView()
-				window.rootViewController = UINavigationController(
-					rootViewController: UIHostingController(rootView: rootView)
-				)
-			} catch let error as SDKError {
-				window.rootViewController = ErrorViewController(errorText: error.description)
-			} catch {
-				window.rootViewController = ErrorViewController(errorText: "Unknown error: \(error)")
-			}
-			self.window = window
+            let rootView = ViewController()
+            window.rootViewController = rootView
+            self.window = window
 			window.makeKeyAndVisible()
 		}
 	}
