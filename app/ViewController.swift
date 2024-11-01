@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         view.addSubview(mapFactory.mapView)
         mapFactory.mapView.frame = view.bounds
         
-        // Позиция на карте, к которой прикрепится view 55.773944110853236, 37.772914918354886
+        // Позиция на карте, к которой прикрепится view
         let position = GeoPointWithElevation(point: GeoPoint(latitude: 55.767701, longitude: 37.729146))
         // Точка внутри view, к которой будет привязана координата position
         let anchor = DGis.Anchor(x: 0, y: 0)
