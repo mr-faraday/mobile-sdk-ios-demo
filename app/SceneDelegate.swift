@@ -32,9 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     )
                 )
 
-                
-                
-                
                 window.rootViewController = UINavigationController(
                     rootViewController: UIHostingController(rootView: rootView)
                 )
