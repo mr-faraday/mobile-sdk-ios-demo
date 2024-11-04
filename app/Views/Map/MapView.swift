@@ -55,11 +55,11 @@ struct MapView: UIViewRepresentable {
 			markerViewOverlay: self.markerViewOverlay
 		)
 		mapViewContainer.mapTapRecognizerCallback = self.tapRecognizerCallback
-		if let mapFactoryProvider = self.mapFactoryProvider {
-			mapViewContainer.mapView.gestureView = mapFactoryProvider.makeGestureView(
-				mapGesturesType: self.mapGesturesType
-			)
-		}
+//		if let mapFactoryProvider = self.mapFactoryProvider {
+//			mapViewContainer.mapView.gestureView = mapFactoryProvider.makeGestureView(
+//				mapGesturesType: self.mapGesturesType
+//			)
+//		}
 
 		self.updateMapView(mapViewContainer.mapView)
 		return mapViewContainer
@@ -72,11 +72,11 @@ struct MapView: UIViewRepresentable {
 		self.updateMapView(mapView)
 		context.coordinator.gesturesTypeChanged = {
 			[weak mapView, weak mapFactoryProvider = self.mapFactoryProvider] type in
-			if let mapFactoryProvider = mapFactoryProvider {
-				mapView?.gestureView = mapFactoryProvider.makeGestureView(
-					mapGesturesType: type
-				)
-			}
+//			if let mapFactoryProvider = mapFactoryProvider {
+//				mapView?.gestureView = mapFactoryProvider.makeGestureView(
+//					mapGesturesType: type
+//				)
+//			}
 		}
 	}
 

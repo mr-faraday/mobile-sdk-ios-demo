@@ -171,14 +171,14 @@ final class RootViewFactory: ObservableObject {
 		)
 	}
 
-	private func makeCustomGesturesDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = CustomGesturesDemoViewModel(mapGesturesType: .custom)
-		return CustomGesturesDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeCustomGesturesDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = CustomGesturesDemoViewModel(mapGesturesType: .custom)
+//		return CustomGesturesDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeCopyrightDemoPage() throws -> some View {
 		return CopyrightSettingsDemoView(

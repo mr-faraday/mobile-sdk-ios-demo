@@ -34,7 +34,7 @@ enum MapGesturesType: CaseIterable, Equatable, Hashable, Identifiable {
 protocol IMapFactoryProvider: AnyObject {
 	var mapFactory: DGis.IMapFactory { get }
 
-	func makeGestureView(mapGesturesType: MapGesturesType) -> (UIView & IMapGestureView)?
+//	func makeGestureView(mapGesturesType: MapGesturesType) -> (UIView & IMapGestureView)?
 }
 
 class MapFactoryProvider: IMapFactoryProvider {
@@ -48,14 +48,14 @@ class MapFactoryProvider: IMapFactoryProvider {
 		self.mapGesturesType = mapGesturesType
 	}
 
-	func makeGestureView(mapGesturesType: MapGesturesType) -> (UIView & IMapGestureView)? {
-		let factory: IMapGestureViewFactory? = self.makeGestureViewFactory(mapGesturesType: mapGesturesType)
-		return factory?.makeGestureView(
-			map: self.mapFactory.map,
-			eventProcessor: self.mapFactory.mapEventProcessor,
-			coordinateSpace: self.mapFactory.mapCoordinateSpace
-		)
-	}
+//	func makeGestureView(mapGesturesType: MapGesturesType) -> (UIView & IMapGestureView)? {
+//		let factory: IMapGestureViewFactory? = self.makeGestureViewFactory(mapGesturesType: mapGesturesType)
+//		return factory?.makeGestureView(
+//			map: self.mapFactory.map,
+//			eventProcessor: self.mapFactory.mapEventProcessor,
+//			coordinateSpace: self.mapFactory.mapCoordinateSpace
+//		)
+//	}
 
 	func resetMapFactory() {
 		self.mapFactory = self.makeMapFactory()
@@ -63,7 +63,7 @@ class MapFactoryProvider: IMapFactoryProvider {
 
 	private func makeMapFactory() -> IMapFactory {
 		var options = MapOptions.default
-		options.gestureViewFactory = self.makeGestureViewFactory(mapGesturesType: self.mapGesturesType)
+//		options.gestureViewFactory = self.makeGestureViewFactory(mapGesturesType: self.mapGesturesType)
 		do {
 			return try self.sdkContainer.makeMapFactory(options: options)
 		} catch {
@@ -71,27 +71,27 @@ class MapFactoryProvider: IMapFactoryProvider {
 		}
 	}
 
-	private func makeGestureViewFactory(mapGesturesType: MapGesturesType) -> IMapGestureViewFactory {
-		switch mapGesturesType {
-			case .default(let scalingCenter):
-				let center: MapGestureViewOptions.ScalingCenter
-				switch scalingCenter {
-					case .camera:
-						center = .cameraPosition
-					case .event:
-						center = .eventCenter
-				}
-				return MapGestureViewFactory(
-					options: MapGestureViewOptions(
-						doubleTapScalingCenter: center,
-						twoFingerTapScalingCenter: center,
-						pinchScalingCenter: center
-					)
-				)
-			case .custom:
-				return CustomGestureViewFactory()
-		}
-	}
+//	private func makeGestureViewFactory(mapGesturesType: MapGesturesType) -> IMapGestureViewFactory {
+//		switch mapGesturesType {
+//			case .default(let scalingCenter):
+//				let center: MapGestureViewOptions.ScalingCenter
+//				switch scalingCenter {
+//					case .camera:
+//						center = .cameraPosition
+//					case .event:
+//						center = .eventCenter
+//				}
+//				return MapGestureViewFactory(
+//					options: MapGestureViewOptions(
+//						doubleTapScalingCenter: center,
+//						twoFingerTapScalingCenter: center,
+//						pinchScalingCenter: center
+//					)
+//				)
+//			case .custom:
+//				return CustomGestureViewFactory()
+//		}
+//	}
 }
 
 extension MapFactoryProvider: IMapProvider {
