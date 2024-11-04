@@ -180,12 +180,12 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeCopyrightDemoPage() throws -> some View {
-		return CopyrightSettingsDemoView(
-			viewModel: CopyrightSettingsDemoViewModel(),
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
-		)
-	}
+//	private func makeCopyrightDemoPage() throws -> some View {
+//		return CopyrightSettingsDemoView(
+//			viewModel: CopyrightSettingsDemoViewModel(),
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
+//		)
+//	}
 	
 	private func makeCalcPositionDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()

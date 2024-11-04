@@ -53,8 +53,6 @@
 		644D33E9289C1A2200C78ED2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33E7289C1A2200C78ED2 /* SettingsViewModel.swift */; };
 		644D33EB289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33EA289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift */; };
 		644D33ED289C1C1C00C78ED2 /* SettingsFormTextField+RouteDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33EC289C1C1C00C78ED2 /* SettingsFormTextField+RouteDistance.swift */; };
-		647301B22B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647301B02B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift */; };
-		647301B32B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647301B12B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift */; };
 		647301B52B7FF2B1005C3065 /* MapTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647301B42B7FF2B1005C3065 /* MapTheme.swift */; };
 		647301B72B7FF4CE005C3065 /* CustomStylePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647301B62B7FF4CE005C3065 /* CustomStylePickerView.swift */; };
 		648B1C222A419E93008EDB1C /* Meter+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B1C212A419E93008EDB1C /* Meter+Helpers.swift */; };
@@ -161,8 +159,6 @@
 		644D33E7289C1A2200C78ED2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		644D33EA289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressAndDragRecognizer.swift; sourceTree = "<group>"; };
 		644D33EC289C1C1C00C78ED2 /* SettingsFormTextField+RouteDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsFormTextField+RouteDistance.swift"; sourceTree = "<group>"; };
-		647301B02B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyrightSettingsDemoView.swift; sourceTree = "<group>"; };
-		647301B12B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyrightSettingsDemoViewModel.swift; sourceTree = "<group>"; };
 		647301B42B7FF2B1005C3065 /* MapTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTheme.swift; sourceTree = "<group>"; };
 		647301B62B7FF4CE005C3065 /* CustomStylePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStylePickerView.swift; sourceTree = "<group>"; };
 		648B1C212A419E93008EDB1C /* Meter+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Meter+Helpers.swift"; sourceTree = "<group>"; };
@@ -346,15 +342,6 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		647301AF2B7FEEB9005C3065 /* CopyrightSettings */ = {
-			isa = PBXGroup;
-			children = (
-				647301B02B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift */,
-				647301B12B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift */,
-			);
-			path = CopyrightSettings;
-			sourceTree = "<group>";
-		};
 		64A96D4026BC3BF000CC21A3 /* ClusterCardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,7 +414,6 @@
 				C47F37282C04573000FBC91C /* CalcPosition */,
 				B7D24AF42646DDB800CC835A /* Camera */,
 				64226DFA26B1B5ED0058E3D9 /* Clustering */,
-				647301AF2B7FEEB9005C3065 /* CopyrightSettings */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
 			path = DemoPages;
@@ -630,7 +616,6 @@
 				64C4FE662812E87F00CE8F6B /* Longitude.swift in Sources */,
 				644D33ED289C1C1C00C78ED2 /* SettingsFormTextField+RouteDistance.swift in Sources */,
 				C47F37322C04576F00FBC91C /* CalcPositionMapObjects.swift in Sources */,
-				647301B32B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift in Sources */,
 				644D33B7289BF66F00C78ED2 /* FeedbackGenerator.swift in Sources */,
 				C4EA59692C736E69005ED414 /* StyleRow.swift in Sources */,
 				B7D24AF62646DDDA00CC835A /* CameraDemoView.swift in Sources */,
@@ -645,7 +630,6 @@
 				B7B2E8E026B2CDD9006DCE9E /* LazyView.swift in Sources */,
 				648B1C2A2A41B0A8008EDB1C /* WeekTimePickerView.swift in Sources */,
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
-				647301B22B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift in Sources */,
 				648B1C262A41A84A008EDB1C /* ObjectType.swift in Sources */,
 				B7D24AE92646D15C00CC835A /* TouchUpRecognizer.swift in Sources */,
 				64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */,
