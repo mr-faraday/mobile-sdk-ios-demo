@@ -10,10 +10,10 @@ protocol ISettingsService: AnyObject {
 	var muteOtherSounds: Bool { get set }
 	var addRoadEventSourceInNavigationView: Bool { get set }
 	var logLevel: DGis.LogLevel { get set }
-	var mapTheme: MapTheme { get set }
+//	var mapTheme: MapTheme { get set }
 	var navigatorVoiceVolume: UInt32 { get set }
-	var navigatorTheme: NavigatorTheme { get set }
-	var graphicsOption: GraphicsOption { get set }
+//	var navigatorTheme: NavigatorTheme { get set }
+//	var graphicsOption: GraphicsOption { get set }
 }
 
 final class SettingsService: ISettingsService {
@@ -95,15 +95,15 @@ final class SettingsService: ISettingsService {
 	}
 	var onNavigatorVoiceVolumeSourceDidChange: ((UInt32) -> Void)?
 
-	var navigatorTheme: NavigatorTheme {
-		get {
-			let rawValue: String? = self.storage.value(forKey: Keys.navigatorTheme)
-			return rawValue.flatMap { NavigatorTheme(rawValue: $0) } ?? .default
-		}
-		set {
-			self.storage.set(newValue.rawValue, forKey: Keys.navigatorTheme)
-		}
-	}
+//	var navigatorTheme: NavigatorTheme {
+//		get {
+//			let rawValue: String? = self.storage.value(forKey: Keys.navigatorTheme)
+//			return rawValue.flatMap { NavigatorTheme(rawValue: $0) } ?? .default
+//		}
+//		set {
+//			self.storage.set(newValue.rawValue, forKey: Keys.navigatorTheme)
+//		}
+//	}
 
 	var addRoadEventSourceInNavigationView: Bool {
 		get {
@@ -124,25 +124,25 @@ final class SettingsService: ISettingsService {
 		}
 	}
 
-	var mapTheme: MapTheme {
-		get {
-			let rawValue: String? = self.storage.value(forKey: Keys.mapTheme)
-			return rawValue.flatMap { MapTheme(rawValue: $0) } ?? .default
-		}
-		set {
-			self.storage.set(newValue.rawValue, forKey: Keys.mapTheme)
-		}
-	}
+//	var mapTheme: MapTheme {
+//		get {
+//			let rawValue: String? = self.storage.value(forKey: Keys.mapTheme)
+//			return rawValue.flatMap { MapTheme(rawValue: $0) } ?? .default
+//		}
+//		set {
+//			self.storage.set(newValue.rawValue, forKey: Keys.mapTheme)
+//		}
+//	}
 	
-	var graphicsOption: GraphicsOption {
-		get {
-			let rawValue: String? = self.storage.value(forKey: Keys.graphicsOption)
-			return rawValue.flatMap { GraphicsOption(rawValue: $0) } ?? .default
-		}
-		set {
-			self.storage.set(newValue.rawValue, forKey: Keys.graphicsOption)
-		}
-	}
+//	var graphicsOption: GraphicsOption {
+//		get {
+//			let rawValue: String? = self.storage.value(forKey: Keys.graphicsOption)
+//			return rawValue.flatMap { GraphicsOption(rawValue: $0) } ?? .default
+//		}
+//		set {
+//			self.storage.set(newValue.rawValue, forKey: Keys.graphicsOption)
+//		}
+//	}
 
 	private let storage: IKeyValueStorage
 
