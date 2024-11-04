@@ -21,6 +21,8 @@ struct MapObjectsIdentificationDemoView: View {
 		self.viewModel.mapMarkerPresenter.setRemoveMarkerViewCallback { [mapView = self.mapView] markerView in
 			mapView?.remove(markerView: markerView)
 		}
+        
+//        mapView?.append(markerView: <#T##any IMarkerView#>)
 	}
 
 	var body: some View {

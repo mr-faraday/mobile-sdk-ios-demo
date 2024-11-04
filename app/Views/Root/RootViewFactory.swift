@@ -31,36 +31,36 @@ final class RootViewFactory: ObservableObject {
 	@ViewBuilder
 	func makeDemoPageView(_ page: DemoPage) throws -> some View {
 		switch page {
-			case .camera:
-				try self.makeCameraDemoPage()
-			case .customMapControls:
-				try self.makeCustomMapControlsDemoPage()
+//			case .camera:
+//				try self.makeCameraDemoPage()
+//			case .customMapControls:
+//				try self.makeCustomMapControlsDemoPage()
 			case .mapObjectsIdentification:
 				try self.makeMapObjectsIdentificationDemoPage()
-			case .mapObjects:
-				try self.makeMapObjectsDemoPage()
-			case .dictionarySearch:
-				try self.makeSearchStylesDemoPage()
-			case .visibleAreaDetection:
-				try self.makeVisibleAreaDetectionDemoPage()
-			case .mapTheme:
-				try self.makeMapThemeDemoPage()
-			case .fps:
-				try self.makeFpsDemoPage()
-			case .clustering:
-				try self.makeClusteringDemoPage()
-			case .customGestures:
-				try self.makeCustomGesturesDemoPage()
-			case .copyrightSettings:
-				try self.makeCopyrightDemoPage()
-			case .calcPosition:
-				try self.makeCalcPositionDemoPage()
-			case .territoryManager:
-				try self.makeTerritoryManagerDemoView()
-			case .routeSearch:
-				try self.makeRouteSearchDemoPage()
-			case .navigator:
-				try self.makeNavigatorDemoPage()
+//			case .mapObjects:
+//				try self.makeMapObjectsDemoPage()
+//			case .dictionarySearch:
+//				try self.makeSearchStylesDemoPage()
+//			case .visibleAreaDetection:
+//				try self.makeVisibleAreaDetectionDemoPage()
+//			case .mapTheme:
+//				try self.makeMapThemeDemoPage()
+//			case .fps:
+//				try self.makeFpsDemoPage()
+//			case .clustering:
+//				try self.makeClusteringDemoPage()
+//			case .customGestures:
+//				try self.makeCustomGesturesDemoPage()
+//			case .copyrightSettings:
+//				try self.makeCopyrightDemoPage()
+//			case .calcPosition:
+//				try self.makeCalcPositionDemoPage()
+//			case .territoryManager:
+//				try self.makeTerritoryManagerDemoView()
+//			case .routeSearch:
+//				try self.makeRouteSearchDemoPage()
+//			case .navigator:
+//				try self.makeNavigatorDemoPage()
 		}
 	}
 
