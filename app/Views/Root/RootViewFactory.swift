@@ -255,17 +255,17 @@ final class RootViewFactory: ObservableObject {
 
 	private func makeMapOptions() -> MapOptions {
 		var options = MapOptions.default
-		options.graphicsPreset = self.settingsService.graphicsOption.preset
-		if let styleUrl = self.settingsService.customStyleUrl {
-			options.styleFuture = self.styleFactory.loadFile(url: styleUrl)
-		}
-		options.appearance = self.settingsService.mapTheme.mapAppearance
+//		options.graphicsPreset = self.settingsService.graphicsOption.preset
+//		if let styleUrl = self.settingsService.customStyleUrl {
+//			options.styleFuture = self.styleFactory.loadFile(url: styleUrl)
+//		}
+//		options.appearance = self.settingsService.mapTheme.mapAppearance
 		return options
 	}
 
 	private func makeMapFactory() throws -> IMapFactory {
 		var options = self.makeMapOptions()
-		options.sourceDescriptors = [self.settingsService.mapDataSource.sourceDescriptor]
+//		options.sourceDescriptors = [self.settingsService.mapDataSource.sourceDescriptor]
 		return try self.sdk.makeMapFactory(options: options)
 	}
 
