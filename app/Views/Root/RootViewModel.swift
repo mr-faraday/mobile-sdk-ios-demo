@@ -6,7 +6,7 @@ final class RootViewModel: ObservableObject {
 //	let settingsViewModel: SettingsViewModel
 
 	@Published var showsSettings: Bool = false
-	@Published var mapDataSourceId: String
+//	@Published var mapDataSourceId: String
 	@Published var isErrorAlertShown: Bool = false
 	var errorMessage: String? {
 		didSet {
@@ -15,13 +15,13 @@ final class RootViewModel: ObservableObject {
 	}
 
 	init(
-		demoPages: [DemoPage],
-		settingsService: ISettingsService
+		demoPages: [DemoPage]
+//		settingsService: ISettingsService
 //		settingsViewModel: SettingsViewModel
 	) {
 		self.demoPages = demoPages
 //		self.settingsViewModel = settingsViewModel
-		self.mapDataSourceId = settingsService.mapDataSource.rawValue
+//		self.mapDataSourceId = settingsService.mapDataSource.rawValue
 
 //		self.settingsViewModel.mapDataSourceChangedCallback = {
 //			[weak self] source in

@@ -5,7 +5,7 @@ final class RootViewFactory: ObservableObject {
 	private let sdk: DGis.Container
 	private let context: Context
 	private let locationManagerFactory: () -> LocationService
-	private let settingsService: ISettingsService
+//	private let settingsService: ISettingsService
 	private let mapProvider: IMapProvider
 	private let applicationIdleTimerService: IApplicationIdleTimerService
 //	private let navigatorSettings: INavigatorSettings
@@ -14,7 +14,7 @@ final class RootViewFactory: ObservableObject {
 	init(
 		sdk: DGis.Container,
 		locationManagerFactory: @escaping () -> LocationService,
-		settingsService: ISettingsService,
+//		settingsService: ISettingsService,
 		mapProvider: IMapProvider,
 		applicationIdleTimerService: IApplicationIdleTimerService
 //		navigatorSettings: INavigatorSettings
@@ -22,7 +22,7 @@ final class RootViewFactory: ObservableObject {
 		self.sdk = sdk
 		self.context = try sdk.context
 		self.locationManagerFactory = locationManagerFactory
-		self.settingsService = settingsService
+//		self.settingsService = settingsService
 		self.mapProvider = mapProvider
 		self.applicationIdleTimerService = applicationIdleTimerService
 //		self.navigatorSettings = navigatorSettings
@@ -248,8 +248,8 @@ final class RootViewFactory: ObservableObject {
 		DemoPageComponentsFactory(
 			sdk: self.sdk,
 			context: self.context,
-			mapFactory: mapFactory,
-			settingsService: self.settingsService
+			mapFactory: mapFactory
+//			settingsService: self.settingsService
 		)
 	}
 
@@ -293,16 +293,16 @@ final class RootViewFactory: ObservableObject {
 		}
 	}
 
-	private func makeSearchManager() throws -> SearchManager {
-		switch settingsService.mapDataSource {
-			case .online:
-				return try SearchManager.createOnlineManager(context: self.context)
-			case .hybrid:
-				return try SearchManager.createSmartManager(context: self.context)
-			case .offline:
-				return try SearchManager.createOfflineManager(context: self.context)
-		}
-	}
+//	private func makeSearchManager() throws -> SearchManager {
+//		switch settingsService.mapDataSource {
+//			case .online:
+//				return try SearchManager.createOnlineManager(context: self.context)
+//			case .hybrid:
+//				return try SearchManager.createSmartManager(context: self.context)
+//			case .offline:
+//				return try SearchManager.createOfflineManager(context: self.context)
+//		}
+//	}
 
 	private func makeMapMarkerPresenter() -> MapMarkerPresenter {
 		MapMarkerPresenter { [sdk = self.sdk] mapMarkerView, position in

@@ -5,18 +5,18 @@ struct DemoPageComponentsFactory {
 	private let sdk: DGis.Container
 	private let context: Context
 	private let mapFactory: IMapFactory
-	private let settingsService: ISettingsService
+//	private let settingsService: ISettingsService
 
 	internal init(
 		sdk: DGis.Container,
 		context: Context,
-		mapFactory: IMapFactory,
-		settingsService: ISettingsService
+		mapFactory: IMapFactory
+//		settingsService: ISettingsService
 	) {
 		self.sdk = sdk
 		self.context = context
 		self.mapFactory = mapFactory
-		self.settingsService = settingsService
+//		self.settingsService = settingsService
 	}
 
 	func makeMapView(

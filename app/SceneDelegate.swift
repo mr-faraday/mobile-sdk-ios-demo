@@ -22,20 +22,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //                let options = MapOptions.default
 //                let mapFactory = try container.sdk.makeMapFactory(options: options)
 //                let viewModel = try MapObjectsIdentificationDemoViewModel(
-//                    searchManager: self.makeSearchManager(),
-//                    imageFactory: self.makeImageFactory(),
 //                    mapMarkerPresenter: self.makeMapMarkerPresenter(),
 //                    map: mapFactory.map,
-//                    mapSourceFactory: MapSourceFactory(context: self.context)
+//                    mapSourceFactory: MapSourceFactory(context: container.sdk.context)
 //                )
 //                let view = MapObjectsIdentificationDemoView(
 //                    viewModel: viewModel,
-//                    viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//                    viewFactory: DemoPageComponentsFactory(
+//                        sdk: container.sdk,
+//                        context: container.sdk.context,
+//                        mapFactory: mapFactory
+////                        settingsService: self.settingsService
+//                    )
 //                )
-                
+//                
+//                
+//                let rootView = ViewController()
                 
 				let rootView = try self.container.makeRootView()
-				window.rootViewController = UINavigationController(
+                window.rootViewController =                UINavigationController(
 					rootViewController: UIHostingController(rootView: rootView)
 				)
 			} catch let error as SDKError {
@@ -62,4 +67,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	func sceneDidEnterBackground(_ scene: UIScene) {
 	}
+    
+    
+    private func makeMapMarkerPresenter() -> MapMarkerPresenter {
+        MapMarkerPresenter { [sdk = container.sdk] mapMarkerView, position in
+            sdk.markerViewFactory.make(
+                view: mapMarkerView,
+                position: position,
+                anchor: Anchor(),
+                offsetX: 0.0,
+                offsetY: 0.0
+            )
+        }
+    }
 }
