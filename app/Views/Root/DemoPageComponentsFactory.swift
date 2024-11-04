@@ -183,27 +183,27 @@ struct DemoPageComponentsFactory {
 //		return RouteView(viewModel: viewModel, show: show, viewFactory: self)
 //	}
 
-	func makeNavigatorView(
-		navigationManager: NavigationManager,
-		roadEventCardPresenter: IRoadEventCardPresenter,
-		onCloseButtonTapped: (() -> Void)?,
-		onMapTapped: ((CGPoint) -> Void)?,
-		onMapLongPressed: ((CGPoint) -> Void)?
-	) -> some View {
-		var options = NavigationViewOptions.default
-		if self.settingsService.navigatorTheme == .custom {
-			options.theme = NavigationViewTheme.custom
-		}
-		return NavigatorView(
-			mapFactory: self.mapFactory,
-			navigationViewFactory: try! self.sdk.makeNavigationViewFactory(options: options),
-			navigationManager: navigationManager,
-			roadEventCardPresenter: roadEventCardPresenter,
-			onCloseButtonTapped: onCloseButtonTapped,
-			onMapTapped: onMapTapped,
-			onMapLongPressed: onMapLongPressed
-		)
-	}
+//	func makeNavigatorView(
+//		navigationManager: NavigationManager,
+//		roadEventCardPresenter: IRoadEventCardPresenter,
+//		onCloseButtonTapped: (() -> Void)?,
+//		onMapTapped: ((CGPoint) -> Void)?,
+//		onMapLongPressed: ((CGPoint) -> Void)?
+//	) -> some View {
+//		var options = NavigationViewOptions.default
+//		if self.settingsService.navigatorTheme == .custom {
+//			options.theme = NavigationViewTheme.custom
+//		}
+//		return NavigatorView(
+//			mapFactory: self.mapFactory,
+//			navigationViewFactory: try! self.sdk.makeNavigationViewFactory(options: options),
+//			navigationManager: navigationManager,
+//			roadEventCardPresenter: roadEventCardPresenter,
+//			onCloseButtonTapped: onCloseButtonTapped,
+//			onMapTapped: onMapTapped,
+//			onMapLongPressed: onMapLongPressed
+//		)
+//	}
 
 //	func makeRoutePreviewListVC(routesInfo: RouteEditorRoutesInfo) -> RoutePreviewListVC {
 //		let factory = try! self.sdk.makeNavigationViewFactory()

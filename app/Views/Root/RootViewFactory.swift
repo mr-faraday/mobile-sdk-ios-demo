@@ -223,26 +223,26 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeNavigatorDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = try NavigatorDemoViewModel(
-			map: mapFactory.map,
-			trafficRouter: TrafficRouter(context: self.sdk.context),
-			navigationManager: NavigationManager(platformContext: self.sdk.context),
-			locationService: self.locationManagerFactory(),
-			voiceManager: getVoiceManager(context: self.sdk.context),
-			applicationIdleTimerService: self.applicationIdleTimerService,
-			navigatorSettings: self.navigatorSettings,
-			mapSourceFactory: MapSourceFactory(context: self.sdk.context),
-			roadEventCardPresenter: RoadEventCardPresenter(),
-			settingsService: self.settingsService,
-			imageFactory: self.makeImageFactory()
-		)
-		return NavigatorDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeNavigatorDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = try NavigatorDemoViewModel(
+//			map: mapFactory.map,
+//			trafficRouter: TrafficRouter(context: self.sdk.context),
+//			navigationManager: NavigationManager(platformContext: self.sdk.context),
+//			locationService: self.locationManagerFactory(),
+//			voiceManager: getVoiceManager(context: self.sdk.context),
+//			applicationIdleTimerService: self.applicationIdleTimerService,
+//			navigatorSettings: self.navigatorSettings,
+//			mapSourceFactory: MapSourceFactory(context: self.sdk.context),
+//			roadEventCardPresenter: RoadEventCardPresenter(),
+//			settingsService: self.settingsService,
+//			imageFactory: self.makeImageFactory()
+//		)
+//		return NavigatorDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeDemoPageComponentsFactory(mapFactory: IMapFactory) -> DemoPageComponentsFactory {
 		DemoPageComponentsFactory(

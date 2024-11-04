@@ -8,7 +8,7 @@ struct NavigatorView: UIViewRepresentable {
 	private let mapFactory: IMapFactory
 	private let navigationViewFactory: INavigationViewFactory
 	private let navigationManager: NavigationManager
-	private let roadEventCardPresenter: IRoadEventCardPresenter
+//	private let roadEventCardPresenter: IRoadEventCardPresenter
 	private let onCloseButtonTapped: (() -> Void)?
 	private let onMapTapped: ((CGPoint) -> Void)?
 	private let onMapLongPressed: ((CGPoint) -> Void)?
@@ -17,7 +17,7 @@ struct NavigatorView: UIViewRepresentable {
 		mapFactory: IMapFactory,
 		navigationViewFactory: INavigationViewFactory,
 		navigationManager: NavigationManager,
-		roadEventCardPresenter: IRoadEventCardPresenter,
+//		roadEventCardPresenter: IRoadEventCardPresenter,
 		onCloseButtonTapped: (() -> Void)?,
 		onMapTapped: ((CGPoint) -> Void)?,
 		onMapLongPressed: ((CGPoint) -> Void)?
@@ -25,7 +25,7 @@ struct NavigatorView: UIViewRepresentable {
 		self.mapFactory = mapFactory
 		self.navigationViewFactory = navigationViewFactory
 		self.navigationManager = navigationManager
-		self.roadEventCardPresenter = roadEventCardPresenter
+//		self.roadEventCardPresenter = roadEventCardPresenter
 		self.onCloseButtonTapped = onCloseButtonTapped
 		self.onMapTapped = onMapTapped
 		self.onMapLongPressed = onMapLongPressed
@@ -37,7 +37,7 @@ struct NavigatorView: UIViewRepresentable {
 			navigationViewFactory: self.navigationViewFactory,
 			navigationManager: self.navigationManager
 		)
-		self.roadEventCardPresenter.delegate = navigatorMapView
+//		self.roadEventCardPresenter.delegate = navigatorMapView
 		navigatorMapView.onCloseButtonTapped = self.onCloseButtonTapped
 		navigatorMapView.onMapTapped = self.onMapTapped
 		navigatorMapView.onMapLongPressed = self.onMapLongPressed
@@ -129,12 +129,12 @@ private class NavigatorMapView: UIView {
 	}
 }
 
-extension NavigatorMapView: RoadEventCardPresenterDelegate {
-	func roadEventCardPresenter(
-		_ presenter: IRoadEventCardPresenter,
-		didRequestToPresent roadEvent: RoadEvent,
-		outputCallback: ((RoadEventCardPresenterOutput) -> Void)?
-	) {
-		self.navigationView.showRoadEvent(roadEvent)
-	}
-}
+//extension NavigatorMapView: RoadEventCardPresenterDelegate {
+//	func roadEventCardPresenter(
+//		_ presenter: IRoadEventCardPresenter,
+//		didRequestToPresent roadEvent: RoadEvent,
+//		outputCallback: ((RoadEventCardPresenterOutput) -> Void)?
+//	) {
+//		self.navigationView.showRoadEvent(roadEvent)
+//	}
+//}
