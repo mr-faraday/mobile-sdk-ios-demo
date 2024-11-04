@@ -56,10 +56,6 @@
 		644D33BC289BF9E200C78ED2 /* MapMarkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33B9289BF9E200C78ED2 /* MapMarkerViewModel.swift */; };
 		644D33BD289BF9E200C78ED2 /* MapMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33BA289BF9E200C78ED2 /* MapMarkerView.swift */; };
 		644D33BE289BF9E200C78ED2 /* MapMarkerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33BB289BF9E200C78ED2 /* MapMarkerPresenter.swift */; };
-		644D33C6289BFD0200C78ED2 /* RoadEventFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33C0289BFD0100C78ED2 /* RoadEventFormPresenter.swift */; };
-		644D33C7289BFD0200C78ED2 /* RoadEventsMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33C1289BFD0100C78ED2 /* RoadEventsMapOverlayView.swift */; };
-		644D33C8289BFD0200C78ED2 /* RoadEventsMapOverlayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33C2289BFD0100C78ED2 /* RoadEventsMapOverlayFactory.swift */; };
-		644D33CB289BFD0200C78ED2 /* RoadEventsDisplayFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33C5289BFD0100C78ED2 /* RoadEventsDisplayFilterView.swift */; };
 		644D33CD289BFD7E00C78ED2 /* MapFactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33CC289BFD7E00C78ED2 /* MapFactoryProvider.swift */; };
 		644D33CF289C000C00C78ED2 /* Color+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33CE289C000B00C78ED2 /* Color+Palette.swift */; };
 		644D33D2289C022700C78ED2 /* SettingsFormDisclosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33D0289C022600C78ED2 /* SettingsFormDisclosureButton.swift */; };
@@ -206,10 +202,6 @@
 		644D33B9289BF9E200C78ED2 /* MapMarkerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerViewModel.swift; sourceTree = "<group>"; };
 		644D33BA289BF9E200C78ED2 /* MapMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerView.swift; sourceTree = "<group>"; };
 		644D33BB289BF9E200C78ED2 /* MapMarkerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerPresenter.swift; sourceTree = "<group>"; };
-		644D33C0289BFD0100C78ED2 /* RoadEventFormPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadEventFormPresenter.swift; sourceTree = "<group>"; };
-		644D33C1289BFD0100C78ED2 /* RoadEventsMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadEventsMapOverlayView.swift; sourceTree = "<group>"; };
-		644D33C2289BFD0100C78ED2 /* RoadEventsMapOverlayFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadEventsMapOverlayFactory.swift; sourceTree = "<group>"; };
-		644D33C5289BFD0100C78ED2 /* RoadEventsDisplayFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadEventsDisplayFilterView.swift; sourceTree = "<group>"; };
 		644D33CC289BFD7E00C78ED2 /* MapFactoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFactoryProvider.swift; sourceTree = "<group>"; };
 		644D33CE289C000B00C78ED2 /* Color+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Palette.swift"; sourceTree = "<group>"; };
 		644D33D0289C022600C78ED2 /* SettingsFormDisclosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFormDisclosureButton.swift; sourceTree = "<group>"; };
@@ -479,17 +471,6 @@
 			path = MapMarkerView;
 			sourceTree = "<group>";
 		};
-		644D33BF289BFD0100C78ED2 /* RoadEvents */ = {
-			isa = PBXGroup;
-			children = (
-				644D33C0289BFD0100C78ED2 /* RoadEventFormPresenter.swift */,
-				644D33C1289BFD0100C78ED2 /* RoadEventsMapOverlayView.swift */,
-				644D33C2289BFD0100C78ED2 /* RoadEventsMapOverlayFactory.swift */,
-				644D33C5289BFD0100C78ED2 /* RoadEventsDisplayFilterView.swift */,
-			);
-			path = RoadEvents;
-			sourceTree = "<group>";
-		};
 		644D33E5289C1A2200C78ED2 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,7 +639,6 @@
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 				B710FF01265FC8C7004659E8 /* MapTheme */,
 				64EE1ABC289B235200FF301C /* Navigator */,
-				644D33BF289BFD0100C78ED2 /* RoadEvents */,
 			);
 			path = DemoPages;
 			sourceTree = "<group>";
@@ -845,7 +825,6 @@
 				64AC48FC2A42E52600CB3C94 /* LanguageSettings.swift in Sources */,
 				6410A45B2AE1C5870065C1BC /* ValueAnimator.swift in Sources */,
 				B7D25ACE264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift in Sources */,
-				644D33C6289BFD0200C78ED2 /* RoadEventFormPresenter.swift in Sources */,
 				0938CAA125B5BBA300100316 /* LocationService.swift in Sources */,
 				64A96D4426BC3BF000CC21A3 /* ClusterCardViewModel.swift in Sources */,
 				648B1C282A41B0A0008EDB1C /* MultiSelectionPickerView.swift in Sources */,
@@ -891,7 +870,6 @@
 				C47F372E2C04576D00FBC91C /* CalcPositionDemoViewModel.swift in Sources */,
 				B7B2E8DC26B2CBE0006DCE9E /* CustomGestureViewFactory.swift in Sources */,
 				64EE1AD0289B235200FF301C /* VoiceRowView.swift in Sources */,
-				644D33C7289BFD0200C78ED2 /* RoadEventsMapOverlayView.swift in Sources */,
 				644D33E8289C1A2200C78ED2 /* SettingsView.swift in Sources */,
 				B7B2E8DB26B2CBE0006DCE9E /* CustomMapGestureView.swift in Sources */,
 				644D33AC289BF2B700C78ED2 /* IKeyValueStorage.swift in Sources */,
@@ -922,7 +900,6 @@
 				B709914F25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift in Sources */,
 				644D33AA289BF29900C78ED2 /* PickerView.swift in Sources */,
 				644D33CF289C000C00C78ED2 /* Color+Palette.swift in Sources */,
-				644D33C8289BFD0200C78ED2 /* RoadEventsMapOverlayFactory.swift in Sources */,
 				644D33B3289BF61300C78ED2 /* LogLevel.swift in Sources */,
 				644D33D7289C073D00C78ED2 /* NavigatorSettings.swift in Sources */,
 				B7ED8A35273CEAFD0020E60F /* UIWindow+Helpers.swift in Sources */,
@@ -939,7 +916,6 @@
 				644D33E9289C1A2200C78ED2 /* SettingsViewModel.swift in Sources */,
 				647301B52B7FF2B1005C3065 /* MapTheme.swift in Sources */,
 				64EE1ADB289B235200FF301C /* NavigatorTargetPointSearchOverlayView.swift in Sources */,
-				644D33CB289BFD0200C78ED2 /* RoadEventsDisplayFilterView.swift in Sources */,
 				4B27063724A3F24C00F12B48 /* SceneDelegate.swift in Sources */,
 				6410A44E2AE1BF570065C1BC /* DetailsActionView.swift in Sources */,
 				6410A44D2AE1BF570065C1BC /* PolygonView.swift in Sources */,

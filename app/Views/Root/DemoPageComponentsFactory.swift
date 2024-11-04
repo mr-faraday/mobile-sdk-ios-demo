@@ -25,7 +25,7 @@ struct DemoPageComponentsFactory {
 		mapGesturesType: MapGesturesType = .default(.event),
 		copyrightInsets: UIEdgeInsets = .zero,
 		showsAPIVersion: Bool = true,
-		overlayFactory: IMapViewOverlayFactory? = nil,
+//		overlayFactory: IMapViewOverlayFactory? = nil,
 		tapRecognizerCallback: MapView.TapRecognizerCallback? = nil,
 		markerViewOverlay: IMarkerViewOverlay? = nil
 	) -> MapView {
@@ -35,7 +35,7 @@ struct DemoPageComponentsFactory {
 			copyrightInsets: copyrightInsets,
 			copyrightAlignment: alignment,
 			showsAPIVersion: showsAPIVersion,
-			overlayFactory: overlayFactory,
+//			overlayFactory: nil,
 			tapRecognizerCallback: tapRecognizerCallback,
 			mapUIViewFactory: { [mapFactory = self.mapFactory] in
 				mapFactory.mapView
@@ -75,7 +75,7 @@ struct DemoPageComponentsFactory {
 		alignment: CopyrightAlignment = .bottomRight,
 		copyrightInsets: UIEdgeInsets = .zero,
 		showsAPIVersion: Bool = true,
-		overlayFactory: IMapViewOverlayFactory? = nil,
+//		overlayFactory: IMapViewOverlayFactory? = nil,
 		tapRecognizerCallback: MapView.TapRecognizerCallback? = nil
 	) -> MapView {
 		self.makeMapView(
@@ -83,7 +83,7 @@ struct DemoPageComponentsFactory {
 			alignment: alignment,
 			copyrightInsets: copyrightInsets,
 			showsAPIVersion: showsAPIVersion,
-			overlayFactory: overlayFactory,
+//			overlayFactory: overlayFactory,
 			tapRecognizerCallback: tapRecognizerCallback,
 			markerViewOverlay: mapFactory.markerViewOverlay
 		)

@@ -11,7 +11,7 @@ struct MapView: UIViewRepresentable {
 	private let urlOpener: URLOpener?
 	private var mapGesturesType: MapGesturesType
 
-	private let overlayFactory: IMapViewOverlayFactory?
+//	private let overlayFactory: IMapViewOverlayFactory?
 	private let tapRecognizerCallback: TapRecognizerCallback?
 	private let mapUIViewFactory: () -> UIView & IMapView
 	private let markerViewOverlay: (UIView & IMarkerViewOverlay)?
@@ -27,7 +27,7 @@ struct MapView: UIViewRepresentable {
 		copyrightInsets: UIEdgeInsets = .zero,
 		copyrightAlignment: DGis.CopyrightAlignment = .bottomRight,
 		showsAPIVersion: Bool = true,
-		overlayFactory: IMapViewOverlayFactory? = nil,
+//		overlayFactory: IMapViewOverlayFactory? = nil,
 		tapRecognizerCallback: TapRecognizerCallback? = nil,
 		mapUIViewFactory: @escaping () -> UIView & IMapView,
 		markerViewOverlay: (UIView & IMarkerViewOverlay)? = nil
@@ -38,7 +38,7 @@ struct MapView: UIViewRepresentable {
 		self.copyrightInsets = copyrightInsets
 		self.copyrightAlignment = copyrightAlignment
 		self.showsAPIVersion = showsAPIVersion
-		self.overlayFactory = overlayFactory
+//		self.overlayFactory = overlayFactory
 		self.tapRecognizerCallback = tapRecognizerCallback
 		self.mapUIViewFactory = mapUIViewFactory
 		self.markerViewOverlay = markerViewOverlay
@@ -50,7 +50,7 @@ struct MapView: UIViewRepresentable {
 
 	func makeUIView(context: Context) -> UIView {
 		let mapViewContainer = MapContainerView(
-			overlayFactory: self.overlayFactory,
+//			overlayFactory: self.overlayFactory,
 			mapUIViewFactory: self.mapUIViewFactory,
 			markerViewOverlay: self.markerViewOverlay
 		)
@@ -100,7 +100,7 @@ struct MapView: UIViewRepresentable {
 }
 
 private final class MapContainerView: UIView {
-	private let overlayFactory: IMapViewOverlayFactory?
+//	private let overlayFactory: IMapViewOverlayFactory?
 	private let mapUIViewFactory: () -> UIView & IMapView
 	private let markerViewOverlay: (UIView & IMarkerViewOverlay)?
 
@@ -110,11 +110,11 @@ private final class MapContainerView: UIView {
 
 	init(
 		frame: CGRect = .zero,
-		overlayFactory: IMapViewOverlayFactory?,
+//		overlayFactory: IMapViewOverlayFactory?,
 		mapUIViewFactory: @escaping () -> UIView & IMapView,
 		markerViewOverlay: (UIView & IMarkerViewOverlay)?
 	) {
-		self.overlayFactory = overlayFactory
+//		self.overlayFactory = overlayFactory
 		self.mapUIViewFactory = mapUIViewFactory
 		self.markerViewOverlay = markerViewOverlay
 		super.init(frame: frame)
@@ -139,16 +139,16 @@ private final class MapContainerView: UIView {
 			self.mapView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
 			self.mapView.rightAnchor.constraint(equalTo: self.rightAnchor)
 		])
-		if let overlayView = self.overlayFactory?.makeOverlayView() {
-			overlayView.translatesAutoresizingMaskIntoConstraints = false
-			self.addSubview(overlayView)
-			NSLayoutConstraint.activate([
-				overlayView.topAnchor.constraint(equalTo: self.topAnchor),
-				overlayView.leftAnchor.constraint(equalTo: self.leftAnchor),
-				overlayView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-				overlayView.rightAnchor.constraint(equalTo: self.rightAnchor)
-			])
-		}
+//		if let overlayView = self.overlayFactory?.makeOverlayView() {
+//			overlayView.translatesAutoresizingMaskIntoConstraints = false
+//			self.addSubview(overlayView)
+//			NSLayoutConstraint.activate([
+//				overlayView.topAnchor.constraint(equalTo: self.topAnchor),
+//				overlayView.leftAnchor.constraint(equalTo: self.leftAnchor),
+//				overlayView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+//				overlayView.rightAnchor.constraint(equalTo: self.rightAnchor)
+//			])
+//		}
 		if let markerViewOverlay = self.markerViewOverlay {
 			markerViewOverlay.translatesAutoresizingMaskIntoConstraints = false
 			self.mapView.addSubview(markerViewOverlay)
@@ -209,7 +209,7 @@ extension MapView {
 		copyrightInsets: UIEdgeInsets = .zero,
 		copyrightAlignment: DGis.CopyrightAlignment = .bottomRight,
 		showsAPIVersion: Bool = true,
-		overlayFactory: IMapViewOverlayFactory? = nil,
+//		overlayFactory: IMapViewOverlayFactory? = nil,
 		tapRecognizerCallback: TapRecognizerCallback? = nil,
 		mapUIViewFactory: @escaping () -> UIView & IMapView,
 		markerViewOverlay: (UIView & IMarkerViewOverlay)? = nil
@@ -221,7 +221,7 @@ extension MapView {
 		self.copyrightInsets = copyrightInsets
 		self.copyrightAlignment = copyrightAlignment
 		self.showsAPIVersion = showsAPIVersion
-		self.overlayFactory = overlayFactory
+//		self.overlayFactory = overlayFactory
 		self.tapRecognizerCallback = tapRecognizerCallback
 		self.mapUIViewFactory = mapUIViewFactory
 		self.markerViewOverlay = markerViewOverlay
