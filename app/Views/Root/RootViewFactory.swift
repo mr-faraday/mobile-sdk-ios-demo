@@ -199,17 +199,17 @@ final class RootViewFactory: ObservableObject {
 		)
 	}
 
-	private func makeTerritoryManagerDemoView() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = TerritoryManagerDemoViewModel(
-			packageManager: getPackageManager(context: self.context),
-			territoryManager: getTerritoryManager(context: self.context)
-		)
-		return TerritoryManagerDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeTerritoryManagerDemoView() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = TerritoryManagerDemoViewModel(
+//			packageManager: getPackageManager(context: self.context),
+//			territoryManager: getTerritoryManager(context: self.context)
+//		)
+//		return TerritoryManagerDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeRouteSearchDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()
