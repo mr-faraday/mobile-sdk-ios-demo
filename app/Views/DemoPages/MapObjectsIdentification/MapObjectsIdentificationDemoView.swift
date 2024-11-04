@@ -4,7 +4,7 @@ import DGis
 struct MapObjectsIdentificationDemoView: View {
 	@ObservedObject private var viewModel: MapObjectsIdentificationDemoViewModel
 	private let viewFactory: DemoPageComponentsFactory
-	private var mapView: MapView? = nil
+    var mapView: MapView? = nil
 
 	init(
 		viewModel: MapObjectsIdentificationDemoViewModel,
@@ -21,8 +21,6 @@ struct MapObjectsIdentificationDemoView: View {
 		self.viewModel.mapMarkerPresenter.setRemoveMarkerViewCallback { [mapView = self.mapView] markerView in
 			mapView?.remove(markerView: markerView)
 		}
-        
-//        mapView?.append(markerView: <#T##any IMarkerView#>)
 	}
 
 	var body: some View {

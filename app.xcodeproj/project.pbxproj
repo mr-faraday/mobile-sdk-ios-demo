@@ -17,10 +17,7 @@
 		4B96E77A2608C14C0057C366 /* GeoRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96E7782608C14B0057C366 /* GeoRect.swift */; };
 		4B96EBDC2608C5780057C366 /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96EBDA2608C5780057C366 /* View+Helpers.swift */; };
 		4B96EBDD2608C5780057C366 /* Channel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96EBDB2608C5780057C366 /* Channel+Helpers.swift */; };
-		4BBE7E1E25264DA200D7EBDB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE7E1D25264DA200D7EBDB /* RootView.swift */; };
 		4BBE7E2025264F2B00D7EBDB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE7E1F25264F2B00D7EBDB /* MapView.swift */; };
-		4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE80252526DFB100D7EBDB /* RootViewModel.swift */; };
-		4BBE802D2526F8A600D7EBDB /* RootViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */; };
 		4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE802F2526FB0D00D7EBDB /* Container.swift */; };
 		6410A45B2AE1C5870065C1BC /* ValueAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */; };
 		641B4462289D12F500A0DEE7 /* FullSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 641B4461289D12F500A0DEE7 /* FullSDK */; };
@@ -57,7 +54,6 @@
 		B7D25ACC264B970100CC835A /* MapObjectsIdentificationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */; };
 		B7D25ACE264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */; };
 		B7D25AD0264BD2DE00CC835A /* DemoPageComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */; };
-		B7D25ADD264BF4B600CC835A /* DemoPageListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ADC264BF4B600CC835A /* DemoPageListRow.swift */; };
 		B7ED8A35273CEAFD0020E60F /* UIWindow+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED8A34273CEAFD0020E60F /* UIWindow+Helpers.swift */; };
 		B7ED8A37273CEB140020E60F /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED8A36273CEB140020E60F /* NavigationService.swift */; };
 		C47F373A2C0459A800FBC91C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F37392C0459A800FBC91C /* Formatters.swift */; };
@@ -90,10 +86,7 @@
 		4B96E7782608C14B0057C366 /* GeoRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoRect.swift; sourceTree = "<group>"; };
 		4B96EBDA2608C5780057C366 /* View+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
 		4B96EBDB2608C5780057C366 /* Channel+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+Helpers.swift"; sourceTree = "<group>"; };
-		4BBE7E1D25264DA200D7EBDB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		4BBE7E1F25264F2B00D7EBDB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		4BBE80252526DFB100D7EBDB /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewFactory.swift; sourceTree = "<group>"; };
 		4BBE802F2526FB0D00D7EBDB /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueAnimator.swift; sourceTree = "<group>"; };
 		644D339F289BECE800C78ED2 /* IMapSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMapSourceFactory.swift; sourceTree = "<group>"; };
@@ -129,7 +122,6 @@
 		B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoView.swift; sourceTree = "<group>"; };
 		B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoViewModel.swift; sourceTree = "<group>"; };
 		B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPageComponentsFactory.swift; sourceTree = "<group>"; };
-		B7D25ADC264BF4B600CC835A /* DemoPageListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPageListRow.swift; sourceTree = "<group>"; };
 		B7ED8A34273CEAFD0020E60F /* UIWindow+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Helpers.swift"; sourceTree = "<group>"; };
 		B7ED8A36273CEB140020E60F /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		C47F37392C0459A800FBC91C /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
@@ -182,6 +174,7 @@
 				648B1C2B2A41D5FD008EDB1C /* ErrorViewController.swift */,
 				4B1354DB24BCCDC7004E8158 /* NativeApp.entitlements */,
 				4B27063624A3F24C00F12B48 /* SceneDelegate.swift */,
+				B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */,
 				B709914D25FA6B1000B2F1A5 /* Extensions */,
 				B7D24AEC2646D40900CC835A /* Models */,
 				B7D236C12643E13400CC835A /* Views */,
@@ -204,18 +197,6 @@
 				648B1C252A41A84A008EDB1C /* ObjectType.swift */,
 			);
 			path = SDKTypes;
-			sourceTree = "<group>";
-		};
-		4BBE822A252741EE00D7EBDB /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */,
-				B7D25ADC264BF4B600CC835A /* DemoPageListRow.swift */,
-				4BBE7E1D25264DA200D7EBDB /* RootView.swift */,
-				4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */,
-				4BBE80252526DFB100D7EBDB /* RootViewModel.swift */,
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		4BBE822C2527422000D7EBDB /* Map */ = {
@@ -277,7 +258,6 @@
 			children = (
 				B7D236C22643E14700CC835A /* DemoPages */,
 				4BBE822C2527422000D7EBDB /* Map */,
-				4BBE822A252741EE00D7EBDB /* Root */,
 				B7D24AE72646D14700CC835A /* ViewModifiers */,
 			);
 			path = Views;
@@ -417,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				644D33D5289C070800C78ED2 /* ApplicationIdleTimerService.swift in Sources */,
-				4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */,
 				644D33BD289BF9E200C78ED2 /* MapMarkerView.swift in Sources */,
 				644D33BE289BF9E200C78ED2 /* MapMarkerPresenter.swift in Sources */,
 				644D33DD289C09CC00C78ED2 /* UIColor+Hex.swift in Sources */,
@@ -443,8 +422,6 @@
 				644D33A0289BECE800C78ED2 /* IMapSourceFactory.swift in Sources */,
 				64C4FE662812E87F00CE8F6B /* Longitude.swift in Sources */,
 				648B1C222A419E93008EDB1C /* Meter+Helpers.swift in Sources */,
-				4BBE7E1E25264DA200D7EBDB /* RootView.swift in Sources */,
-				4BBE802D2526F8A600D7EBDB /* RootViewFactory.swift in Sources */,
 				644D33EB289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift in Sources */,
 				644D33AC289BF2B700C78ED2 /* IKeyValueStorage.swift in Sources */,
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
@@ -461,7 +438,6 @@
 				B7ED8A35273CEAFD0020E60F /* UIWindow+Helpers.swift in Sources */,
 				B7D25AD0264BD2DE00CC835A /* DemoPageComponentsFactory.swift in Sources */,
 				644D33BC289BF9E200C78ED2 /* MapMarkerViewModel.swift in Sources */,
-				B7D25ADD264BF4B600CC835A /* DemoPageListRow.swift in Sources */,
 				644D33A2289BECFA00C78ED2 /* SettingsService.swift in Sources */,
 				4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */,
 				4B27063724A3F24C00F12B48 /* SceneDelegate.swift in Sources */,

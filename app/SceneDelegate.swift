@@ -16,7 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             do {
-                let mapFactory = try container.sdk.makeMapFactory(options: .default)
+                var options = MapOptions.default
+                options.position = CameraPosition(point: GeoPoint(latitude: 55.753284502198895, longitude: 37.62240403545171), zoom: Zoom(floatLiteral: 10))
+                let mapFactory = try container.sdk.makeMapFactory(options: options)
                 let viewModel = try MapObjectsIdentificationDemoViewModel(
                     mapMarkerPresenter: self.makeMapMarkerPresenter(),
                     map: mapFactory.map,
@@ -31,6 +33,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                         mapFactory: mapFactory
                     )
                 )
+                
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    let position = GeoPointWithElevation(point: GeoPoint(latitude: 55.767701, longitude: 37.729146))
+                      
+                      let redSquare = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+                      redSquare.backgroundColor = UIColor.red
+                      
+                      let markerView = MapMarkerView(viewModel: MapMarkerViewModel(title: "sdfsdf", subtitle: "xcvxcv"))
+                    let mapMarkerView = self.container.sdk.markerViewFactory.make(
+                          view: markerView,
+                          position: position,
+                          anchor: Anchor(),
+                          offsetX: 0.0,
+                          offsetY: 0.0
+                      )
+                    
+                    rootView.mapView?.append(markerView: mapMarkerView)
+                }
 
                 window.rootViewController = UINavigationController(
                     rootViewController: UIHostingController(rootView: rootView)
