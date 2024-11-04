@@ -24,8 +24,6 @@
 		4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE802F2526FB0D00D7EBDB /* Container.swift */; };
 		6410A45B2AE1C5870065C1BC /* ValueAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */; };
 		641B4462289D12F500A0DEE7 /* FullSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 641B4461289D12F500A0DEE7 /* FullSDK */; };
-		64226DFD26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */; };
-		64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */; };
 		644D33A0289BECE800C78ED2 /* IMapSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D339F289BECE800C78ED2 /* IMapSourceFactory.swift */; };
 		644D33A2289BECFA00C78ED2 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A1289BECFA00C78ED2 /* SettingsService.swift */; };
 		644D33A6289BF20800C78ED2 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A3289BF20800C78ED2 /* MapDataSource.swift */; };
@@ -54,9 +52,6 @@
 		648B1C282A41B0A0008EDB1C /* MultiSelectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B1C272A41B0A0008EDB1C /* MultiSelectionPickerView.swift */; };
 		648B1C2A2A41B0A8008EDB1C /* WeekTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B1C292A41B0A8008EDB1C /* WeekTimePickerView.swift */; };
 		648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B1C2B2A41D5FD008EDB1C /* ErrorViewController.swift */; };
-		648B1C2E2A41E4FF008EDB1C /* ClusteringSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B1C2D2A41E4FF008EDB1C /* ClusteringSettingsView.swift */; };
-		64A96D4326BC3BF000CC21A3 /* ClusterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A96D4126BC3BF000CC21A3 /* ClusterCardView.swift */; };
-		64A96D4426BC3BF000CC21A3 /* ClusterCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A96D4226BC3BF000CC21A3 /* ClusterCardViewModel.swift */; };
 		64C4FE662812E87F00CE8F6B /* Longitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4FE642812E87F00CE8F6B /* Longitude.swift */; };
 		64C4FE672812E87F00CE8F6B /* Latitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4FE652812E87F00CE8F6B /* Latitude.swift */; };
 		64F3382128B8C3F90018B7AD /* dgissdk.key in Resources */ = {isa = PBXBuildFile; fileRef = 64F3382028B8C3F90018B7AD /* dgissdk.key */; };
@@ -112,8 +107,6 @@
 		4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewFactory.swift; sourceTree = "<group>"; };
 		4BBE802F2526FB0D00D7EBDB /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueAnimator.swift; sourceTree = "<group>"; };
-		64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoViewModel.swift; sourceTree = "<group>"; };
-		64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoView.swift; sourceTree = "<group>"; };
 		644D339F289BECE800C78ED2 /* IMapSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMapSourceFactory.swift; sourceTree = "<group>"; };
 		644D33A1289BECFA00C78ED2 /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		644D33A3289BF20800C78ED2 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
@@ -142,9 +135,6 @@
 		648B1C272A41B0A0008EDB1C /* MultiSelectionPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSelectionPickerView.swift; sourceTree = "<group>"; };
 		648B1C292A41B0A8008EDB1C /* WeekTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimePickerView.swift; sourceTree = "<group>"; };
 		648B1C2B2A41D5FD008EDB1C /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
-		648B1C2D2A41E4FF008EDB1C /* ClusteringSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringSettingsView.swift; sourceTree = "<group>"; };
-		64A96D4126BC3BF000CC21A3 /* ClusterCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterCardView.swift; sourceTree = "<group>"; };
-		64A96D4226BC3BF000CC21A3 /* ClusterCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterCardViewModel.swift; sourceTree = "<group>"; };
 		64C4FE642812E87F00CE8F6B /* Longitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Longitude.swift; sourceTree = "<group>"; };
 		64C4FE652812E87F00CE8F6B /* Latitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latitude.swift; sourceTree = "<group>"; };
 		64F3382028B8C3F90018B7AD /* dgissdk.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dgissdk.key; sourceTree = "<group>"; };
@@ -266,17 +256,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		64226DFA26B1B5ED0058E3D9 /* Clustering */ = {
-			isa = PBXGroup;
-			children = (
-				64A96D4026BC3BF000CC21A3 /* ClusterCardView */,
-				64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */,
-				64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */,
-				648B1C2D2A41E4FF008EDB1C /* ClusteringSettingsView.swift */,
-			);
-			path = Clustering;
-			sourceTree = "<group>";
-		};
 		644D33B8289BF9E200C78ED2 /* MapMarkerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,15 +264,6 @@
 				644D33BB289BF9E200C78ED2 /* MapMarkerPresenter.swift */,
 			);
 			path = MapMarkerView;
-			sourceTree = "<group>";
-		};
-		64A96D4026BC3BF000CC21A3 /* ClusterCardView */ = {
-			isa = PBXGroup;
-			children = (
-				64A96D4126BC3BF000CC21A3 /* ClusterCardView.swift */,
-				64A96D4226BC3BF000CC21A3 /* ClusterCardViewModel.swift */,
-			);
-			path = ClusterCardView;
 			sourceTree = "<group>";
 		};
 		B709914A25FA0FD700B2F1A5 /* MapObjectCardView */ = {
@@ -354,7 +324,6 @@
 		B7D236C22643E14700CC835A /* DemoPages */ = {
 			isa = PBXGroup;
 			children = (
-				64226DFA26B1B5ED0058E3D9 /* Clustering */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
 			path = DemoPages;
@@ -489,9 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				644D33D5289C070800C78ED2 /* ApplicationIdleTimerService.swift in Sources */,
-				648B1C2E2A41E4FF008EDB1C /* ClusteringSettingsView.swift in Sources */,
 				4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */,
-				64226DFD26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift in Sources */,
 				644D33BD289BF9E200C78ED2 /* MapMarkerView.swift in Sources */,
 				644D33BE289BF9E200C78ED2 /* MapMarkerPresenter.swift in Sources */,
 				644D33DD289C09CC00C78ED2 /* UIColor+Hex.swift in Sources */,
@@ -504,7 +471,6 @@
 				6410A45B2AE1C5870065C1BC /* ValueAnimator.swift in Sources */,
 				B7D25ACE264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift in Sources */,
 				0938CAA125B5BBA300100316 /* LocationService.swift in Sources */,
-				64A96D4426BC3BF000CC21A3 /* ClusterCardViewModel.swift in Sources */,
 				648B1C282A41B0A0008EDB1C /* MultiSelectionPickerView.swift in Sources */,
 				644D33D3289C022700C78ED2 /* SettingsFormTextField.swift in Sources */,
 				B709915525FA72A600B2F1A5 /* Future+Helpers.swift in Sources */,
@@ -532,14 +498,12 @@
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
 				648B1C262A41A84A008EDB1C /* ObjectType.swift in Sources */,
 				B7D24AE92646D15C00CC835A /* TouchUpRecognizer.swift in Sources */,
-				64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */,
 				644D33D2289C022700C78ED2 /* SettingsFormDisclosureButton.swift in Sources */,
 				644D33DB289C09C100C78ED2 /* TextFieldClearButton.swift in Sources */,
 				644D33DF289C0B0500C78ED2 /* TrafficRoute+Helpers.swift in Sources */,
 				C47F373A2C0459A800FBC91C /* Formatters.swift in Sources */,
 				644D33A6289BF20800C78ED2 /* MapDataSource.swift in Sources */,
 				0991909625B96E1C00F4235B /* MapControl.swift in Sources */,
-				64A96D4326BC3BF000CC21A3 /* ClusterCardView.swift in Sources */,
 				B709914F25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift in Sources */,
 				644D33AA289BF29900C78ED2 /* PickerView.swift in Sources */,
 				644D33CF289C000C00C78ED2 /* Color+Palette.swift in Sources */,

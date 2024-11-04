@@ -158,18 +158,18 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeClusteringDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = ClusteringDemoViewModel(
-			map: mapFactory.map,
-			mapSourceFactory: MapSourceFactory(context: self.context),
-			imageFactory: self.makeImageFactory()
-		)
-		return ClusteringDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeClusteringDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = ClusteringDemoViewModel(
+//			map: mapFactory.map,
+//			mapSourceFactory: MapSourceFactory(context: self.context),
+//			imageFactory: self.makeImageFactory()
+//		)
+//		return ClusteringDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 //	private func makeCustomGesturesDemoPage() throws -> some View {
 //		let mapFactory = try self.makeMapFactory()

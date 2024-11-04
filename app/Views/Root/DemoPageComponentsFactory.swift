@@ -146,9 +146,9 @@ struct DemoPageComponentsFactory {
 		return MapObjectCardView(viewModel: viewModel)
 	}
 
-	func makeClusterCardView(_ viewModel: ClusterCardViewModel) -> some View {
-		return ClusterCardView(viewModel: viewModel)
-	}
+//	func makeClusterCardView(_ viewModel: ClusterCardViewModel) -> some View {
+//		return ClusterCardView(viewModel: viewModel)
+//	}
 
 //	func makeRouteView(
 //		show: Binding<Bool>,
