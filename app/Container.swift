@@ -94,10 +94,10 @@ final class Container {
 	private func makeRootViewModel() -> RootViewModel {
 		let rootViewModel = RootViewModel(
 			demoPages: DemoPage.allCases,
-			settingsService: self.settingsService,
-			settingsViewModel: SettingsViewModel(
-				settingsService: settingsService
-			)
+			settingsService: self.settingsService
+//			settingsViewModel: SettingsViewModel(
+//				settingsService: settingsService
+//			)
 		)
 		return rootViewModel
 	}

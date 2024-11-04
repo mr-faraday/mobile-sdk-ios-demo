@@ -29,12 +29,12 @@ struct RootView: View {
 		.navigationBarItems(trailing: self.settingsButton())
 		.navigationBarTitle("2GIS MobileSDK Examples", displayMode: .inline)
 		.navigationBarHidden(false)
-		.sheet(isPresented: self.$viewModel.showsSettings) {
-			SettingsView(
-				viewModel: self.viewModel.settingsViewModel,
-				show: self.$viewModel.showsSettings
-			)
-		}
+//		.sheet(isPresented: self.$viewModel.showsSettings) {
+//			SettingsView(
+//				viewModel: self.viewModel.settingsViewModel,
+//				show: self.$viewModel.showsSettings
+//			)
+//		}
 		.alert(isPresented: self.$viewModel.isErrorAlertShown) {
 			Alert(title: Text(self.viewModel.errorMessage ?? ""))
 		}

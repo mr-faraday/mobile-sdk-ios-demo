@@ -3,7 +3,7 @@ import DGis
 
 final class RootViewModel: ObservableObject {
 	let demoPages: [DemoPage]
-	let settingsViewModel: SettingsViewModel
+//	let settingsViewModel: SettingsViewModel
 
 	@Published var showsSettings: Bool = false
 	@Published var mapDataSourceId: String
@@ -16,16 +16,16 @@ final class RootViewModel: ObservableObject {
 
 	init(
 		demoPages: [DemoPage],
-		settingsService: ISettingsService,
-		settingsViewModel: SettingsViewModel
+		settingsService: ISettingsService
+//		settingsViewModel: SettingsViewModel
 	) {
 		self.demoPages = demoPages
-		self.settingsViewModel = settingsViewModel
+//		self.settingsViewModel = settingsViewModel
 		self.mapDataSourceId = settingsService.mapDataSource.rawValue
 
-		self.settingsViewModel.mapDataSourceChangedCallback = {
-			[weak self] source in
-			self?.mapDataSourceId = source.rawValue
-		}
+//		self.settingsViewModel.mapDataSourceChangedCallback = {
+//			[weak self] source in
+//			self?.mapDataSourceId = source.rawValue
+//		}
 	}
 }
