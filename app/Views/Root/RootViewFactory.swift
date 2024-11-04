@@ -77,18 +77,18 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeCameraDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = CameraDemoViewModel(
-			locationManagerFactory: self.locationManagerFactory,
-			map: mapFactory.map,
-			mapSourceFactory: MapSourceFactory(context: self.context)
-		)
-		return CameraDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeCameraDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = CameraDemoViewModel(
+//			locationManagerFactory: self.locationManagerFactory,
+//			map: mapFactory.map,
+//			mapSourceFactory: MapSourceFactory(context: self.context)
+//		)
+//		return CameraDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 //	private func makeVisibleAreaDetectionDemoPage() throws -> some View {
 //		let mapFactory = try self.makeMapFactory()

@@ -76,8 +76,6 @@
 		B7B2E8E026B2CDD9006DCE9E /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2E8DF26B2CDD9006DCE9E /* LazyView.swift */; };
 		B7D24AE92646D15C00CC835A /* TouchUpRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AE82646D15C00CC835A /* TouchUpRecognizer.swift */; };
 		B7D24AF32646D55700CC835A /* DemoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF22646D55700CC835A /* DemoPage.swift */; };
-		B7D24AF62646DDDA00CC835A /* CameraDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF52646DDDA00CC835A /* CameraDemoView.swift */; };
-		B7D24AF82646E35500CC835A /* CameraDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */; };
 		B7D25ACC264B970100CC835A /* MapObjectsIdentificationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */; };
 		B7D25ACE264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */; };
 		B7D25AD0264BD2DE00CC835A /* DemoPageComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */; };
@@ -182,8 +180,6 @@
 		B7B2E8DF26B2CDD9006DCE9E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		B7D24AE82646D15C00CC835A /* TouchUpRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchUpRecognizer.swift; sourceTree = "<group>"; };
 		B7D24AF22646D55700CC835A /* DemoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPage.swift; sourceTree = "<group>"; };
-		B7D24AF52646DDDA00CC835A /* CameraDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDemoView.swift; sourceTree = "<group>"; };
-		B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDemoViewModel.swift; sourceTree = "<group>"; };
 		B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoView.swift; sourceTree = "<group>"; };
 		B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoViewModel.swift; sourceTree = "<group>"; };
 		B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPageComponentsFactory.swift; sourceTree = "<group>"; };
@@ -412,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				C47F37282C04573000FBC91C /* CalcPosition */,
-				B7D24AF42646DDB800CC835A /* Camera */,
 				64226DFA26B1B5ED0058E3D9 /* Clustering */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
@@ -458,15 +453,6 @@
 				6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B7D24AF42646DDB800CC835A /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				B7D24AF52646DDDA00CC835A /* CameraDemoView.swift */,
-				B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */,
-			);
-			path = Camera;
 			sourceTree = "<group>";
 		};
 		B7D25ACA264B96E500CC835A /* MapObjectsIdentification */ = {
@@ -618,10 +604,8 @@
 				C47F37322C04576F00FBC91C /* CalcPositionMapObjects.swift in Sources */,
 				644D33B7289BF66F00C78ED2 /* FeedbackGenerator.swift in Sources */,
 				C4EA59692C736E69005ED414 /* StyleRow.swift in Sources */,
-				B7D24AF62646DDDA00CC835A /* CameraDemoView.swift in Sources */,
 				648B1C222A419E93008EDB1C /* Meter+Helpers.swift in Sources */,
 				4BBE7E1E25264DA200D7EBDB /* RootView.swift in Sources */,
-				B7D24AF82646E35500CC835A /* CameraDemoViewModel.swift in Sources */,
 				4BBE802D2526F8A600D7EBDB /* RootViewFactory.swift in Sources */,
 				644D33EB289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift in Sources */,
 				C47F372E2C04576D00FBC91C /* CalcPositionDemoViewModel.swift in Sources */,
