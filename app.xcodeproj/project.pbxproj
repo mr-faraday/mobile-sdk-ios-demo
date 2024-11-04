@@ -22,18 +22,6 @@
 		4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE80252526DFB100D7EBDB /* RootViewModel.swift */; };
 		4BBE802D2526F8A600D7EBDB /* RootViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */; };
 		4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE802F2526FB0D00D7EBDB /* Container.swift */; };
-		6410A4482AE1BF570065C1BC /* MapObjectsDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4382AE1BF570065C1BC /* MapObjectsDemoViewModel.swift */; };
-		6410A4492AE1BF570065C1BC /* PolylineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A43A2AE1BF570065C1BC /* PolylineViewModel.swift */; };
-		6410A44A2AE1BF570065C1BC /* PolylineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A43B2AE1BF570065C1BC /* PolylineView.swift */; };
-		6410A44B2AE1BF570065C1BC /* MapObjectsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A43C2AE1BF570065C1BC /* MapObjectsDemoView.swift */; };
-		6410A44C2AE1BF570065C1BC /* PolygonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A43E2AE1BF570065C1BC /* PolygonViewModel.swift */; };
-		6410A44D2AE1BF570065C1BC /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A43F2AE1BF570065C1BC /* PolygonView.swift */; };
-		6410A44E2AE1BF570065C1BC /* DetailsActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4402AE1BF570065C1BC /* DetailsActionView.swift */; };
-		6410A44F2AE1BF570065C1BC /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4422AE1BF570065C1BC /* CircleViewModel.swift */; };
-		6410A4502AE1BF570065C1BC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4432AE1BF570065C1BC /* CircleView.swift */; };
-		6410A4512AE1BF570065C1BC /* MapObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4442AE1BF570065C1BC /* MapObjectType.swift */; };
-		6410A4522AE1BF570065C1BC /* MarkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4462AE1BF570065C1BC /* MarkerViewModel.swift */; };
-		6410A4532AE1BF570065C1BC /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A4472AE1BF570065C1BC /* MarkerView.swift */; };
 		6410A45B2AE1C5870065C1BC /* ValueAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */; };
 		641B4462289D12F500A0DEE7 /* FullSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 641B4461289D12F500A0DEE7 /* FullSDK */; };
 		64226DFD26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */; };
@@ -152,18 +140,6 @@
 		4BBE80252526DFB100D7EBDB /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		4BBE802C2526F8A600D7EBDB /* RootViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewFactory.swift; sourceTree = "<group>"; };
 		4BBE802F2526FB0D00D7EBDB /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		6410A4382AE1BF570065C1BC /* MapObjectsDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectsDemoViewModel.swift; sourceTree = "<group>"; };
-		6410A43A2AE1BF570065C1BC /* PolylineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineViewModel.swift; sourceTree = "<group>"; };
-		6410A43B2AE1BF570065C1BC /* PolylineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineView.swift; sourceTree = "<group>"; };
-		6410A43C2AE1BF570065C1BC /* MapObjectsDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectsDemoView.swift; sourceTree = "<group>"; };
-		6410A43E2AE1BF570065C1BC /* PolygonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonViewModel.swift; sourceTree = "<group>"; };
-		6410A43F2AE1BF570065C1BC /* PolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
-		6410A4402AE1BF570065C1BC /* DetailsActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsActionView.swift; sourceTree = "<group>"; };
-		6410A4422AE1BF570065C1BC /* CircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
-		6410A4432AE1BF570065C1BC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		6410A4442AE1BF570065C1BC /* MapObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectType.swift; sourceTree = "<group>"; };
-		6410A4462AE1BF570065C1BC /* MarkerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerViewModel.swift; sourceTree = "<group>"; };
-		6410A4472AE1BF570065C1BC /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueAnimator.swift; sourceTree = "<group>"; };
 		64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoViewModel.swift; sourceTree = "<group>"; };
 		64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoView.swift; sourceTree = "<group>"; };
@@ -348,57 +324,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6410A4372AE1BF570065C1BC /* MapObjects */ = {
-			isa = PBXGroup;
-			children = (
-				6410A4412AE1BF570065C1BC /* Circle */,
-				6410A4452AE1BF570065C1BC /* Marker */,
-				6410A43D2AE1BF570065C1BC /* Polygon */,
-				6410A4392AE1BF570065C1BC /* Polyline */,
-				6410A4402AE1BF570065C1BC /* DetailsActionView.swift */,
-				6410A43C2AE1BF570065C1BC /* MapObjectsDemoView.swift */,
-				6410A4382AE1BF570065C1BC /* MapObjectsDemoViewModel.swift */,
-				6410A4442AE1BF570065C1BC /* MapObjectType.swift */,
-			);
-			path = MapObjects;
-			sourceTree = "<group>";
-		};
-		6410A4392AE1BF570065C1BC /* Polyline */ = {
-			isa = PBXGroup;
-			children = (
-				6410A43A2AE1BF570065C1BC /* PolylineViewModel.swift */,
-				6410A43B2AE1BF570065C1BC /* PolylineView.swift */,
-			);
-			path = Polyline;
-			sourceTree = "<group>";
-		};
-		6410A43D2AE1BF570065C1BC /* Polygon */ = {
-			isa = PBXGroup;
-			children = (
-				6410A43E2AE1BF570065C1BC /* PolygonViewModel.swift */,
-				6410A43F2AE1BF570065C1BC /* PolygonView.swift */,
-			);
-			path = Polygon;
-			sourceTree = "<group>";
-		};
-		6410A4412AE1BF570065C1BC /* Circle */ = {
-			isa = PBXGroup;
-			children = (
-				6410A4422AE1BF570065C1BC /* CircleViewModel.swift */,
-				6410A4432AE1BF570065C1BC /* CircleView.swift */,
-			);
-			path = Circle;
-			sourceTree = "<group>";
-		};
-		6410A4452AE1BF570065C1BC /* Marker */ = {
-			isa = PBXGroup;
-			children = (
-				6410A4462AE1BF570065C1BC /* MarkerViewModel.swift */,
-				6410A4472AE1BF570065C1BC /* MarkerView.swift */,
-			);
-			path = Marker;
-			sourceTree = "<group>";
-		};
 		64226DFA26B1B5ED0058E3D9 /* Clustering */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,7 +487,6 @@
 				B7B2E8D626B2CBDF006DCE9E /* CustomGestures */,
 				64EE1A99289B22AA00FF301C /* CustomMapControls */,
 				64226DFF26B1B5F70058E3D9 /* Fps */,
-				6410A4372AE1BF570065C1BC /* MapObjects */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
 			path = DemoPages;
@@ -734,12 +658,10 @@
 				644D33DD289C09CC00C78ED2 /* UIColor+Hex.swift in Sources */,
 				C47F372C2C04576C00FBC91C /* PaddingRect.swift in Sources */,
 				B709913925F9CBCF00B2F1A5 /* MapObjectCardView.swift in Sources */,
-				6410A4482AE1BF570065C1BC /* MapObjectsDemoViewModel.swift in Sources */,
 				C47F37362C04577300FBC91C /* PaddingRectView.swift in Sources */,
 				B7ED8A37273CEB140020E60F /* NavigationService.swift in Sources */,
 				4B96E77A2608C14C0057C366 /* GeoRect.swift in Sources */,
 				644D33D9289C07FC00C78ED2 /* PackageInfo+Helpers.swift in Sources */,
-				6410A4532AE1BF570065C1BC /* MarkerView.swift in Sources */,
 				4B96EBDD2608C5780057C366 /* Channel+Helpers.swift in Sources */,
 				647301B72B7FF4CE005C3065 /* CustomStylePickerView.swift in Sources */,
 				B7D25ACC264B970100CC835A /* MapObjectsIdentificationDemoView.swift in Sources */,
@@ -755,13 +677,10 @@
 				B709914C25FA11CD00B2F1A5 /* MapObjectCardViewModel.swift in Sources */,
 				644D33B5289BF62600C78ED2 /* NavigationViewTheme+Custom.swift in Sources */,
 				B709915125FA6B9D00B2F1A5 /* GeoPoint+Helpers.swift in Sources */,
-				6410A44B2AE1BF570065C1BC /* MapObjectsDemoView.swift in Sources */,
 				64C4FE672812E87F00CE8F6B /* Latitude.swift in Sources */,
 				644D33CD289BFD7E00C78ED2 /* MapFactoryProvider.swift in Sources */,
-				6410A4512AE1BF570065C1BC /* MapObjectType.swift in Sources */,
 				4B27063524A3F24C00F12B48 /* AppDelegate.swift in Sources */,
 				C47F37302C04576E00FBC91C /* CalcPositionInfoView.swift in Sources */,
-				6410A4502AE1BF570065C1BC /* CircleView.swift in Sources */,
 				B7B2E8DD26B2CBE0006DCE9E /* CustomGesturesDemoViewModel.swift in Sources */,
 				4B96EBDC2608C5780057C366 /* View+Helpers.swift in Sources */,
 				4BBE7E2025264F2B00D7EBDB /* MapView.swift in Sources */,
@@ -781,7 +700,6 @@
 				4BBE7E1E25264DA200D7EBDB /* RootView.swift in Sources */,
 				B7D24AF82646E35500CC835A /* CameraDemoViewModel.swift in Sources */,
 				4BBE802D2526F8A600D7EBDB /* RootViewFactory.swift in Sources */,
-				6410A4522AE1BF570065C1BC /* MarkerViewModel.swift in Sources */,
 				644D33EB289C1B9400C78ED2 /* LongPressAndDragRecognizer.swift in Sources */,
 				C47F372E2C04576D00FBC91C /* CalcPositionDemoViewModel.swift in Sources */,
 				B7B2E8DC26B2CBE0006DCE9E /* CustomGestureViewFactory.swift in Sources */,
@@ -791,7 +709,6 @@
 				64226E0226B1B5F70058E3D9 /* FpsDemoView.swift in Sources */,
 				B7B2E8E026B2CDD9006DCE9E /* LazyView.swift in Sources */,
 				648B1C2A2A41B0A8008EDB1C /* WeekTimePickerView.swift in Sources */,
-				6410A44F2AE1BF570065C1BC /* CircleViewModel.swift in Sources */,
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
 				647301B22B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift in Sources */,
 				64226E0326B1B5F70058E3D9 /* FpsDemoViewModel.swift in Sources */,
@@ -806,7 +723,6 @@
 				644D33A6289BF20800C78ED2 /* MapDataSource.swift in Sources */,
 				0991909625B96E1C00F4235B /* MapControl.swift in Sources */,
 				64A96D4326BC3BF000CC21A3 /* ClusterCardView.swift in Sources */,
-				6410A4492AE1BF570065C1BC /* PolylineViewModel.swift in Sources */,
 				64EE1A9E289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift in Sources */,
 				B709914F25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift in Sources */,
 				644D33AA289BF29900C78ED2 /* PickerView.swift in Sources */,
@@ -825,10 +741,6 @@
 				644D33E9289C1A2200C78ED2 /* SettingsViewModel.swift in Sources */,
 				647301B52B7FF2B1005C3065 /* MapTheme.swift in Sources */,
 				4B27063724A3F24C00F12B48 /* SceneDelegate.swift in Sources */,
-				6410A44E2AE1BF570065C1BC /* DetailsActionView.swift in Sources */,
-				6410A44D2AE1BF570065C1BC /* PolygonView.swift in Sources */,
-				6410A44A2AE1BF570065C1BC /* PolylineView.swift in Sources */,
-				6410A44C2AE1BF570065C1BC /* PolygonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -126,21 +126,21 @@ struct DemoPageComponentsFactory {
 //		return SearchView(store: searchStore)
 //	}
 
-	func makeCircleView(viewModel: CircleViewModel, show: Binding<Bool>) -> some View {
-		return CircleView(viewModel: viewModel, show: show)
-	}
-
-	func makeMarkerView(viewModel: MarkerViewModel, show: Binding<Bool>) -> some View {
-		return MarkerView(viewModel: viewModel, show: show)
-	}
-
-	func makePolygonView(viewModel: PolygonViewModel, show: Binding<Bool>) -> some View {
-		return PolygonView(viewModel: viewModel, show: show)
-	}
-
-	func makePolylineView(viewModel: PolylineViewModel, show: Binding<Bool>) -> some View {
-		return PolylineView(viewModel: viewModel, show: show)
-	}
+//	func makeCircleView(viewModel: CircleViewModel, show: Binding<Bool>) -> some View {
+//		return CircleView(viewModel: viewModel, show: show)
+//	}
+//
+//	func makeMarkerView(viewModel: MarkerViewModel, show: Binding<Bool>) -> some View {
+//		return MarkerView(viewModel: viewModel, show: show)
+//	}
+//
+//	func makePolygonView(viewModel: PolygonViewModel, show: Binding<Bool>) -> some View {
+//		return PolygonView(viewModel: viewModel, show: show)
+//	}
+//
+//	func makePolylineView(viewModel: PolylineViewModel, show: Binding<Bool>) -> some View {
+//		return PolylineView(viewModel: viewModel, show: show)
+//	}
 
 	func makeMapObjectCardView(_ viewModel: MapObjectCardViewModel) -> some View {
 		return MapObjectCardView(viewModel: viewModel)

@@ -56,22 +56,22 @@ struct FpsDemoView: View {
 						.scale(1.2)
 						.fill(Color.white)
 					)
-					DetailsActionView(action: {
-						self.viewModel.setFps()
-					}, primaryText: "Set fps")
-					DetailsActionView(action: {
-						self.viewModel.startCameraMoving()
-					}, primaryText: "Move camera around Moscow")
-					if self.keyboardOffset > 0 {
-						DetailsActionView(action: {
-							UIApplication.shared.sendAction(
-								#selector(UIResponder.resignFirstResponder),
-								to: nil,
-								from: nil,
-								for: nil
-							)
-						}, primaryText: "OK")
-					}
+//					DetailsActionView(action: {
+//						self.viewModel.setFps()
+//					}, primaryText: "Set fps")
+//					DetailsActionView(action: {
+//						self.viewModel.startCameraMoving()
+//					}, primaryText: "Move camera around Moscow")
+//					if self.keyboardOffset > 0 {
+//						DetailsActionView(action: {
+//							UIApplication.shared.sendAction(
+//								#selector(UIResponder.resignFirstResponder),
+//								to: nil,
+//								from: nil,
+//								for: nil
+//							)
+//						}, primaryText: "OK")
+//					}
 				}
 				.padding(.trailing, 40.0)
 				.padding(.bottom, 60.0)

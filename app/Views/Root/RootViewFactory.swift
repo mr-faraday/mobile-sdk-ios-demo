@@ -118,17 +118,17 @@ final class RootViewFactory: ObservableObject {
 		)
 	}
 
-	private func makeMapObjectsDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = MapObjectsDemoViewModel(
-			map: mapFactory.map,
-			imageFactory: self.makeImageFactory()
-		)
-		return MapObjectsDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeMapObjectsDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = MapObjectsDemoViewModel(
+//			map: mapFactory.map,
+//			imageFactory: self.makeImageFactory()
+//		)
+//		return MapObjectsDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeCustomMapControlsDemoPage() throws -> some View {
 		let viewModel = CustomMapControlsDemoViewModel()

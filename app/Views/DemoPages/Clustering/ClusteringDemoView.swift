@@ -20,25 +20,25 @@ struct ClusteringDemoView: View {
 				}
 				self.settingsButton().frame(width: 100, height: 100, alignment: .bottomTrailing)
 				if self.viewModel.showMarkersMenu {
-					VStack(spacing: 12.0) {
-						DetailsActionView(action: {
-							self.viewModel.addMarkers()
-						}, primaryText: "Add specified number of markers")
-						DetailsActionView(action: {
-							self.viewModel.removeMarkers()
-						}, primaryText: "Remove specified number of markers")
-						DetailsActionView(action: {
-							self.viewModel.removeAndAddMarkers()
-						}, primaryText: "Remove and add specified number of markers")
-						DetailsActionView(action: {
-							self.viewModel.reinitMapObjectManager()
-						}, primaryText: "Create new MapObjectManager")
-						DetailsActionView(action: {
-							self.viewModel.removeAll()
-						}, primaryText: "Remove all markers")
-					}
-					.padding(.trailing, 40.0)
-					.padding(.bottom, 60.0)
+//					VStack(spacing: 12.0) {
+//						DetailsActionView(action: {
+//							self.viewModel.addMarkers()
+//						}, primaryText: "Add specified number of markers")
+//						DetailsActionView(action: {
+//							self.viewModel.removeMarkers()
+//						}, primaryText: "Remove specified number of markers")
+//						DetailsActionView(action: {
+//							self.viewModel.removeAndAddMarkers()
+//						}, primaryText: "Remove and add specified number of markers")
+//						DetailsActionView(action: {
+//							self.viewModel.reinitMapObjectManager()
+//						}, primaryText: "Create new MapObjectManager")
+//						DetailsActionView(action: {
+//							self.viewModel.removeAll()
+//						}, primaryText: "Remove all markers")
+//					}
+//					.padding(.trailing, 40.0)
+//					.padding(.bottom, 60.0)
 				}
 				if let cardViewModel = viewModel.selectedClusterCardViewModel {
 					self.viewFactory.makeClusterCardView(cardViewModel)
