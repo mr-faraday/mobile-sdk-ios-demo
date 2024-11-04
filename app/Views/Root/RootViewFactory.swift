@@ -106,8 +106,8 @@ final class RootViewFactory: ObservableObject {
 	private func makeMapObjectsIdentificationDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()
 		let viewModel = try MapObjectsIdentificationDemoViewModel(
-			searchManager: self.makeSearchManager(),
-			imageFactory: self.makeImageFactory(),
+//			searchManager: self.makeSearchManager(),
+//			imageFactory: self.makeImageFactory(),
 			mapMarkerPresenter: self.makeMapMarkerPresenter(),
 			map: mapFactory.map,
 			mapSourceFactory: MapSourceFactory(context: self.context)

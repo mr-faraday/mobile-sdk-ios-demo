@@ -12,8 +12,8 @@ final class MapObjectsIdentificationDemoViewModel: ObservableObject {
 
 	let mapMarkerPresenter: MapMarkerPresenter
 
-	private let searchManager: SearchManager
-	private let imageFactory: IImageFactory
+//	private let searchManager: SearchManager
+//	private let imageFactory: IImageFactory
 	private let map: Map
 	private let dgisSource: DgisSource?
 	private var selectedMarker: Marker?
@@ -23,22 +23,22 @@ final class MapObjectsIdentificationDemoViewModel: ObservableObject {
 		}
 	}
 	private lazy var mapObjectManager: MapObjectManager = MapObjectManager(map: self.map)
-	private lazy var selectedMarkerIcon: DGis.Image = {
-		let icon = UIImage(systemName: "mappin.and.ellipse")!
-			.withTintColor(#colorLiteral(red: 0.2470588235, green: 0.6, blue: 0.1607843137, alpha: 1))
-			.withConfiguration(UIImage.SymbolConfiguration(scale: .large))
-		return self.imageFactory.make(image: icon)
-	}()
+//	private lazy var selectedMarkerIcon: DGis.Image = {
+//		let icon = UIImage(systemName: "mappin.and.ellipse")!
+//			.withTintColor(#colorLiteral(red: 0.2470588235, green: 0.6, blue: 0.1607843137, alpha: 1))
+//			.withConfiguration(UIImage.SymbolConfiguration(scale: .large))
+//		return self.imageFactory.make(image: icon)
+//	}()
 
 	init(
-		searchManager: SearchManager,
-		imageFactory: IImageFactory,
+//		searchManager: SearchManager,
+//		imageFactory: IImageFactory,
 		mapMarkerPresenter: MapMarkerPresenter,
 		map: Map,
 		mapSourceFactory: IMapSourceFactory
 	) {
-		self.searchManager = searchManager
-		self.imageFactory = imageFactory
+//		self.searchManager = searchManager
+//		self.imageFactory = imageFactory
 		self.mapMarkerPresenter = mapMarkerPresenter
 		self.map = map
 		self.dgisSource = self.map.sources.first(where: { $0 is DgisSource }) as? DgisSource
@@ -67,26 +67,26 @@ final class MapObjectsIdentificationDemoViewModel: ObservableObject {
 			latitude: mapPoint.latitude,
 			longitude: mapPoint.longitude
 		)
-		let markerOptions = MarkerOptions(
-			position: markerPoint,
-			icon: self.selectedMarkerIcon
-		)
-		let marker: Marker
-		do {
-			marker = try Marker(options: markerOptions)
-		} catch let error as SimpleError {
-			self.errorMessage = error.description
-			return
-		} catch {
-			self.errorMessage = error.localizedDescription
-			return
-		}
-		self.mapObjectManager.addObject(item: marker)
-		self.selectedMarker = marker
+//		let markerOptions = MarkerOptions(
+//			position: markerPoint,
+//			icon: self.selectedMarkerIcon
+//		)
+//		let marker: Marker
+//		do {
+//			marker = try Marker(options: markerOptions)
+//		} catch let error as SimpleError {
+//			self.errorMessage = error.description
+//			return
+//		} catch {
+//			self.errorMessage = error.localizedDescription
+//			return
+//		}
+//		self.mapObjectManager.addObject(item: marker)
+//		self.selectedMarker = marker
 
 		self.selectedMapObject = MapObjectCardViewModel(
 			objectInfo: selectedObject,
-			searchManager: self.searchManager,
+//			searchManager: self.searchManager,
 			dgisSource: self.dgisSource,
 			onClose: {
 				[weak self] in

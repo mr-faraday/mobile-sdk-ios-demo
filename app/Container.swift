@@ -95,9 +95,6 @@ final class Container {
 		let rootViewModel = RootViewModel(
 			demoPages: DemoPage.allCases,
 			settingsService: self.settingsService
-//			settingsViewModel: SettingsViewModel(
-//				settingsService: settingsService
-//			)
 		)
 		return rootViewModel
 	}
