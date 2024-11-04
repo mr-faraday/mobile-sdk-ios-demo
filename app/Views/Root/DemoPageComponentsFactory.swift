@@ -122,9 +122,9 @@ struct DemoPageComponentsFactory {
 		})
 	}
 
-	func makeSearchView(searchStore: SearchStore) -> some View {
-		return SearchView(store: searchStore)
-	}
+//	func makeSearchView(searchStore: SearchStore) -> some View {
+//		return SearchView(store: searchStore)
+//	}
 
 	func makeCircleView(viewModel: CircleViewModel, show: Binding<Bool>) -> some View {
 		return CircleView(viewModel: viewModel, show: show)

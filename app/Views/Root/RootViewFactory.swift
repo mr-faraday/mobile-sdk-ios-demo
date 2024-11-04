@@ -64,18 +64,18 @@ final class RootViewFactory: ObservableObject {
 		}
 	}
 
-	private func makeSearchStylesDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = try SearchDemoViewModel(
-			searchManager: self.makeSearchManager(),
-			map: mapFactory.map,
-			locationService: self.sdk.locationService
-		)
-		return SearchDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeSearchStylesDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = try SearchDemoViewModel(
+//			searchManager: self.makeSearchManager(),
+//			map: mapFactory.map,
+//			locationService: self.sdk.locationService
+//		)
+//		return SearchDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeCameraDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()
