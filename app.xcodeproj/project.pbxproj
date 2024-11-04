@@ -32,7 +32,6 @@
 		644D33A7289BF20800C78ED2 /* NavigatorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A4289BF20800C78ED2 /* NavigatorTheme.swift */; };
 		644D33AA289BF29900C78ED2 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A9289BF29900C78ED2 /* PickerView.swift */; };
 		644D33AC289BF2B700C78ED2 /* IKeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33AB289BF2B700C78ED2 /* IKeyValueStorage.swift */; };
-		644D33AF289BF3B200C78ED2 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33AE289BF3B200C78ED2 /* NavigatorView.swift */; };
 		644D33B3289BF61300C78ED2 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33B2289BF61300C78ED2 /* LogLevel.swift */; };
 		644D33B5289BF62600C78ED2 /* NavigationViewTheme+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33B4289BF62600C78ED2 /* NavigationViewTheme+Custom.swift */; };
 		644D33BC289BF9E200C78ED2 /* MapMarkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33B9289BF9E200C78ED2 /* MapMarkerViewModel.swift */; };
@@ -125,7 +124,6 @@
 		644D33A4289BF20800C78ED2 /* NavigatorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorTheme.swift; sourceTree = "<group>"; };
 		644D33A9289BF29900C78ED2 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		644D33AB289BF2B700C78ED2 /* IKeyValueStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKeyValueStorage.swift; sourceTree = "<group>"; };
-		644D33AE289BF3B200C78ED2 /* NavigatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
 		644D33B2289BF61300C78ED2 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		644D33B4289BF62600C78ED2 /* NavigationViewTheme+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationViewTheme+Custom.swift"; sourceTree = "<group>"; };
 		644D33B9289BF9E200C78ED2 /* MapMarkerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerViewModel.swift; sourceTree = "<group>"; };
@@ -287,14 +285,6 @@
 			path = Clustering;
 			sourceTree = "<group>";
 		};
-		644D33AD289BF3B200C78ED2 /* NavigatorView */ = {
-			isa = PBXGroup;
-			children = (
-				644D33AE289BF3B200C78ED2 /* NavigatorView.swift */,
-			);
-			path = NavigatorView;
-			sourceTree = "<group>";
-		};
 		644D33B8289BF9E200C78ED2 /* MapMarkerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,7 +364,6 @@
 				B737070E266D04970043C0FA /* Common */,
 				B7D236C22643E14700CC835A /* DemoPages */,
 				4BBE822C2527422000D7EBDB /* Map */,
-				644D33AD289BF3B200C78ED2 /* NavigatorView */,
 				4BBE822A252741EE00D7EBDB /* Root */,
 				644D33E5289C1A2200C78ED2 /* Settings */,
 				B7D24AE72646D14700CC835A /* ViewModifiers */,
@@ -519,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				644D33AF289BF3B200C78ED2 /* NavigatorView.swift in Sources */,
 				644D33D5289C070800C78ED2 /* ApplicationIdleTimerService.swift in Sources */,
 				648B1C2E2A41E4FF008EDB1C /* ClusteringSettingsView.swift in Sources */,
 				4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */,
