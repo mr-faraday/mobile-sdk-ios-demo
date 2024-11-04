@@ -91,8 +91,6 @@
 		B709914F25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709914E25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift */; };
 		B709915125FA6B9D00B2F1A5 /* GeoPoint+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709915025FA6B9D00B2F1A5 /* GeoPoint+Helpers.swift */; };
 		B709915525FA72A600B2F1A5 /* Future+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709915425FA72A600B2F1A5 /* Future+Helpers.swift */; };
-		B710FF03265FC8FA004659E8 /* MapThemeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B710FF02265FC8FA004659E8 /* MapThemeDemoView.swift */; };
-		B710FF05265FC908004659E8 /* MapThemeDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B710FF04265FC908004659E8 /* MapThemeDemoViewModel.swift */; };
 		B7370710266D04D30043C0FA /* Button+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B737070F266D04D30043C0FA /* Button+Factory.swift */; };
 		B7B2E8DB26B2CBE0006DCE9E /* CustomMapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2E8D726B2CBDF006DCE9E /* CustomMapGestureView.swift */; };
 		B7B2E8DC26B2CBE0006DCE9E /* CustomGestureViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2E8D826B2CBDF006DCE9E /* CustomGestureViewFactory.swift */; };
@@ -222,8 +220,6 @@
 		B709914E25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RenderedObjectInfo+Helpers.swift"; sourceTree = "<group>"; };
 		B709915025FA6B9D00B2F1A5 /* GeoPoint+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoPoint+Helpers.swift"; sourceTree = "<group>"; };
 		B709915425FA72A600B2F1A5 /* Future+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Helpers.swift"; sourceTree = "<group>"; };
-		B710FF02265FC8FA004659E8 /* MapThemeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapThemeDemoView.swift; sourceTree = "<group>"; };
-		B710FF04265FC908004659E8 /* MapThemeDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapThemeDemoViewModel.swift; sourceTree = "<group>"; };
 		B737070F266D04D30043C0FA /* Button+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Factory.swift"; sourceTree = "<group>"; };
 		B7B2E8D726B2CBDF006DCE9E /* CustomMapGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapGestureView.swift; sourceTree = "<group>"; };
 		B7B2E8D826B2CBDF006DCE9E /* CustomGestureViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGestureViewFactory.swift; sourceTree = "<group>"; };
@@ -517,15 +513,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B710FF01265FC8C7004659E8 /* MapTheme */ = {
-			isa = PBXGroup;
-			children = (
-				B710FF02265FC8FA004659E8 /* MapThemeDemoView.swift */,
-				B710FF04265FC908004659E8 /* MapThemeDemoViewModel.swift */,
-			);
-			path = MapTheme;
-			sourceTree = "<group>";
-		};
 		B737070E266D04970043C0FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,7 +564,6 @@
 				64226DFF26B1B5F70058E3D9 /* Fps */,
 				6410A4372AE1BF570065C1BC /* MapObjects */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
-				B710FF01265FC8C7004659E8 /* MapTheme */,
 			);
 			path = DemoPages;
 			sourceTree = "<group>";
@@ -804,7 +790,6 @@
 				644D33AC289BF2B700C78ED2 /* IKeyValueStorage.swift in Sources */,
 				64226E0226B1B5F70058E3D9 /* FpsDemoView.swift in Sources */,
 				B7B2E8E026B2CDD9006DCE9E /* LazyView.swift in Sources */,
-				B710FF03265FC8FA004659E8 /* MapThemeDemoView.swift in Sources */,
 				648B1C2A2A41B0A8008EDB1C /* WeekTimePickerView.swift in Sources */,
 				6410A44F2AE1BF570065C1BC /* CircleViewModel.swift in Sources */,
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
@@ -835,7 +820,6 @@
 				B7D25ADD264BF4B600CC835A /* DemoPageListRow.swift in Sources */,
 				C47F37382C0457A600FBC91C /* CalcPositionDemoView.swift in Sources */,
 				644D33A2289BECFA00C78ED2 /* SettingsService.swift in Sources */,
-				B710FF05265FC908004659E8 /* MapThemeDemoViewModel.swift in Sources */,
 				64EE1A9F289B22AA00FF301C /* CustomMapControlsDemoView.swift in Sources */,
 				4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */,
 				644D33E9289C1A2200C78ED2 /* SettingsViewModel.swift in Sources */,

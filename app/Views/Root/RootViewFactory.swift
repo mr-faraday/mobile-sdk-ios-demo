@@ -138,13 +138,13 @@ final class RootViewFactory: ObservableObject {
 		)
 	}
 
-	private func makeMapThemeDemoPage() throws -> some View {
-		let viewModel = MapThemeDemoViewModel()
-		return MapThemeDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
-		)
-	}
+//	private func makeMapThemeDemoPage() throws -> some View {
+//		let viewModel = MapThemeDemoViewModel()
+//		return MapThemeDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
+//		)
+//	}
 
 	private func makeFpsDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()
