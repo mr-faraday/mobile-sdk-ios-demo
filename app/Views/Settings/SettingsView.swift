@@ -17,8 +17,8 @@ struct SettingsView: View {
 				List {
 					self.mapSourcePicker()
 					.padding(.bottom)
-					self.languagePicker()
-					.padding(.bottom)
+//					self.languagePicker()
+//					.padding(.bottom)
 					self.graphicsOptionPicker()
 					.padding(.bottom)
 					self.mapThemePicker()
@@ -50,16 +50,16 @@ struct SettingsView: View {
 		)
 	}
 
-	private func languagePicker() -> some View {
-		Picker(
-			"Map language",
-			selection: self.$viewModel.language
-		) {
-			ForEach(Language.allCases) { lang in
-				Text(lang.name).tag(lang)
-			}
-		}
-	}
+//	private func languagePicker() -> some View {
+//		Picker(
+//			"Map language",
+//			selection: self.$viewModel.language
+//		) {
+//			ForEach(Language.allCases) { lang in
+//				Text(lang.name).tag(lang)
+//			}
+//		}
+//	}
 
 	private func stylesPicker() -> some View {
 		VStack(alignment: .leading, spacing: 5) {

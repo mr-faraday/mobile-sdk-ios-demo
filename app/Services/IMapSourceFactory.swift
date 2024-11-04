@@ -5,7 +5,7 @@ import DGis
 protocol IMapSourceFactory {
 	func makeMyLocationMapObjectSource() -> MyLocationMapObjectSource
 
-	func makeRoadEventSource() -> RoadEventSource
+//	func makeRoadEventSource() -> RoadEventSource
 }
 
 struct MapSourceFactory: IMapSourceFactory {
@@ -22,7 +22,7 @@ struct MapSourceFactory: IMapSourceFactory {
 		)
 	}
 
-	func makeRoadEventSource() -> RoadEventSource {
-		RoadEventSource(context: self.context)
-	}
+//	func makeRoadEventSource() -> RoadEventSource {
+//		RoadEventSource(context: self.context)
+//	}
 }

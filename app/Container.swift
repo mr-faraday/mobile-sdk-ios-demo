@@ -28,7 +28,7 @@ final class Container {
 		UIApplication.shared
 	}
 	private lazy var settingsStorage: IKeyValueStorage = UserDefaults.standard
-	private lazy var navigatorSettings: INavigatorSettings = NavigatorSettings(storage: self.settingsStorage)
+//	private lazy var navigatorSettings: INavigatorSettings = NavigatorSettings(storage: self.settingsStorage)
 
 	private lazy var settingsService: ISettingsService = {
 		let service = SettingsService(
@@ -50,9 +50,9 @@ final class Container {
 			}
 			audioSettings.volume = value
 		}
-		service.onCurrentLanguageDidChange = { [weak self] (Language) -> Void in
-			self?.mapFactoryProvider.resetMapFactory()
-		}
+//		service.onCurrentLanguageDidChange = { [weak self] (Language) -> Void in
+//			self?.mapFactoryProvider.resetMapFactory()
+//		}
 		return service
 	}()
 
@@ -85,8 +85,8 @@ final class Container {
 			},
 			settingsService: self.settingsService,
 			mapProvider: self.mapFactoryProvider,
-			applicationIdleTimerService: self.applicationIdleTimerService,
-			navigatorSettings: self.navigatorSettings
+			applicationIdleTimerService: self.applicationIdleTimerService
+//			navigatorSettings: self.navigatorSettings
 		)
 		return viewFactory
 	}

@@ -8,7 +8,7 @@ final class RootViewFactory: ObservableObject {
 	private let settingsService: ISettingsService
 	private let mapProvider: IMapProvider
 	private let applicationIdleTimerService: IApplicationIdleTimerService
-	private let navigatorSettings: INavigatorSettings
+//	private let navigatorSettings: INavigatorSettings
 	private lazy var styleFactory: IStyleFactory = self.makeStyleFactory()
 
 	init(
@@ -16,8 +16,8 @@ final class RootViewFactory: ObservableObject {
 		locationManagerFactory: @escaping () -> LocationService,
 		settingsService: ISettingsService,
 		mapProvider: IMapProvider,
-		applicationIdleTimerService: IApplicationIdleTimerService,
-		navigatorSettings: INavigatorSettings
+		applicationIdleTimerService: IApplicationIdleTimerService
+//		navigatorSettings: INavigatorSettings
 	) throws {
 		self.sdk = sdk
 		self.context = try sdk.context
@@ -25,7 +25,7 @@ final class RootViewFactory: ObservableObject {
 		self.settingsService = settingsService
 		self.mapProvider = mapProvider
 		self.applicationIdleTimerService = applicationIdleTimerService
-		self.navigatorSettings = navigatorSettings
+//		self.navigatorSettings = navigatorSettings
 	}
 
 	@ViewBuilder

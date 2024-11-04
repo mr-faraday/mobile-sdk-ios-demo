@@ -45,7 +45,7 @@ final class MapObjectsIdentificationDemoViewModel: ObservableObject {
 
 		let locationSource = mapSourceFactory.makeMyLocationMapObjectSource()
 		self.map.addSource(source: locationSource)
-		self.map.addSource(source: mapSourceFactory.makeRoadEventSource())
+//		self.map.addSource(source: mapSourceFactory.makeRoadEventSource())
 	}
 
 	func tap(objectInfo: RenderedObjectInfo) {

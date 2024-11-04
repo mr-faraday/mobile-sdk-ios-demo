@@ -2,10 +2,10 @@ import Foundation
 import DGis
 
 protocol ISettingsService: AnyObject {
-	var onCurrentLanguageDidChange: ((Language) -> Void)? { get set }
+//	var onCurrentLanguageDidChange: ((Language) -> Void)? { get set }
 	var customStyleUrl: URL? { get set }
 	var mapDataSource: MapDataSource { get set }
-	var language: Language { get set }
+//	var language: Language { get set }
 	var httpCacheEnabled: Bool { get set }
 	var muteOtherSounds: Bool { get set }
 	var addRoadEventSourceInNavigationView: Bool { get set }
@@ -31,7 +31,7 @@ final class SettingsService: ISettingsService {
 		static let graphicsOption = "Global/GraphicsOption"
 	}
 
-	var onCurrentLanguageDidChange: ((Language) -> Void)?
+//	var onCurrentLanguageDidChange: ((Language) -> Void)?
 
 	var customStyleUrl: URL? {
 		get {
@@ -53,16 +53,16 @@ final class SettingsService: ISettingsService {
 		}
 	}
 
-	var language: Language {
-		get {
-			let rawValue: String? = self.storage.value(forKey: Keys.language)
-			return rawValue.flatMap { Language(rawValue: $0) } ?? .default
-		}
-		set {
-			self.storage.set(newValue.rawValue, forKey: Keys.language)
-			self.onCurrentLanguageDidChange?(newValue)
-		}
-	}
+//	var language: Language {
+//		get {
+//			let rawValue: String? = self.storage.value(forKey: Keys.language)
+//			return rawValue.flatMap { Language(rawValue: $0) } ?? .default
+//		}
+//		set {
+//			self.storage.set(newValue.rawValue, forKey: Keys.language)
+//			self.onCurrentLanguageDidChange?(newValue)
+//		}
+//	}
 
 	var httpCacheEnabled: Bool {
 		get {
