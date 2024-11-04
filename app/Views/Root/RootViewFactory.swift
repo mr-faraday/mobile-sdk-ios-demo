@@ -211,17 +211,17 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeRouteSearchDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = RouteSearchDemoViewModel(
-			map: mapFactory.map,
-			mapSourceFactory: MapSourceFactory(context: self.context)
-		)
-		return RouteSearchDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeRouteSearchDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = RouteSearchDemoViewModel(
+//			map: mapFactory.map,
+//			mapSourceFactory: MapSourceFactory(context: self.context)
+//		)
+//		return RouteSearchDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeNavigatorDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()

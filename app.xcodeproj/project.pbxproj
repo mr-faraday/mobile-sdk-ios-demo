@@ -92,14 +92,6 @@
 		64EE1A9E289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9A289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift */; };
 		64EE1A9F289B22AA00FF301C /* CustomMapControlsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9B289B22AA00FF301C /* CustomMapControlsDemoView.swift */; };
 		64EE1AA0289B22AA00FF301C /* CustomZoomControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9D289B22AA00FF301C /* CustomZoomControl.swift */; };
-		64EE1AAB289B22E800FF301C /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA3289B22E800FF301C /* RouteViewModel.swift */; };
-		64EE1AAC289B22E800FF301C /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA4289B22E800FF301C /* RouteView.swift */; };
-		64EE1AAD289B22E800FF301C /* RouteDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA5289B22E800FF301C /* RouteDetailsVC.swift */; };
-		64EE1AAE289B22E800FF301C /* RoutePreviewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA6289B22E800FF301C /* RoutePreviewListVC.swift */; };
-		64EE1AAF289B22E800FF301C /* RouteSearchSettingsDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA7289B22E800FF301C /* RouteSearchSettingsDatePicker.swift */; };
-		64EE1AB0289B22E800FF301C /* RouteSearchDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA8289B22E800FF301C /* RouteSearchDemoViewModel.swift */; };
-		64EE1AB1289B22E800FF301C /* RouteSearchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AA9289B22E800FF301C /* RouteSearchSettingsView.swift */; };
-		64EE1AB2289B22E800FF301C /* RouteSearchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AAA289B22E800FF301C /* RouteSearchDemoView.swift */; };
 		64EE1ACD289B235200FF301C /* NavigatorDemoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1ABD289B235200FF301C /* NavigatorDemoPageView.swift */; };
 		64EE1ACF289B235200FF301C /* NavigatorVoicesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AC0289B235200FF301C /* NavigatorVoicesSettingsView.swift */; };
 		64EE1AD0289B235200FF301C /* VoiceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1AC1289B235200FF301C /* VoiceRowView.swift */; };
@@ -250,14 +242,6 @@
 		64EE1A9A289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapControlsDemoViewModel.swift; sourceTree = "<group>"; };
 		64EE1A9B289B22AA00FF301C /* CustomMapControlsDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapControlsDemoView.swift; sourceTree = "<group>"; };
 		64EE1A9D289B22AA00FF301C /* CustomZoomControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomZoomControl.swift; sourceTree = "<group>"; };
-		64EE1AA3289B22E800FF301C /* RouteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
-		64EE1AA4289B22E800FF301C /* RouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
-		64EE1AA5289B22E800FF301C /* RouteDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsVC.swift; sourceTree = "<group>"; };
-		64EE1AA6289B22E800FF301C /* RoutePreviewListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePreviewListVC.swift; sourceTree = "<group>"; };
-		64EE1AA7289B22E800FF301C /* RouteSearchSettingsDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSearchSettingsDatePicker.swift; sourceTree = "<group>"; };
-		64EE1AA8289B22E800FF301C /* RouteSearchDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSearchDemoViewModel.swift; sourceTree = "<group>"; };
-		64EE1AA9289B22E800FF301C /* RouteSearchSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSearchSettingsView.swift; sourceTree = "<group>"; };
-		64EE1AAA289B22E800FF301C /* RouteSearchDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteSearchDemoView.swift; sourceTree = "<group>"; };
 		64EE1ABD289B235200FF301C /* NavigatorDemoPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorDemoPageView.swift; sourceTree = "<group>"; };
 		64EE1AC0289B235200FF301C /* NavigatorVoicesSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorVoicesSettingsView.swift; sourceTree = "<group>"; };
 		64EE1AC1289B235200FF301C /* VoiceRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceRowView.swift; sourceTree = "<group>"; };
@@ -553,29 +537,6 @@
 			path = CustomZoomControl;
 			sourceTree = "<group>";
 		};
-		64EE1AA1289B22E800FF301C /* RouteSearch */ = {
-			isa = PBXGroup;
-			children = (
-				64EE1AA2289B22E800FF301C /* RouteView */,
-				64EE1AAA289B22E800FF301C /* RouteSearchDemoView.swift */,
-				64EE1AA8289B22E800FF301C /* RouteSearchDemoViewModel.swift */,
-				64EE1AA7289B22E800FF301C /* RouteSearchSettingsDatePicker.swift */,
-				64EE1AA9289B22E800FF301C /* RouteSearchSettingsView.swift */,
-			);
-			path = RouteSearch;
-			sourceTree = "<group>";
-		};
-		64EE1AA2289B22E800FF301C /* RouteView */ = {
-			isa = PBXGroup;
-			children = (
-				64EE1AA5289B22E800FF301C /* RouteDetailsVC.swift */,
-				64EE1AA6289B22E800FF301C /* RoutePreviewListVC.swift */,
-				64EE1AA4289B22E800FF301C /* RouteView.swift */,
-				64EE1AA3289B22E800FF301C /* RouteViewModel.swift */,
-			);
-			path = RouteView;
-			sourceTree = "<group>";
-		};
 		64EE1ABC289B235200FF301C /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
@@ -698,7 +659,6 @@
 				B710FF01265FC8C7004659E8 /* MapTheme */,
 				64EE1ABC289B235200FF301C /* Navigator */,
 				644D33BF289BFD0100C78ED2 /* RoadEvents */,
-				64EE1AA1289B22E800FF301C /* RouteSearch */,
 			);
 			path = DemoPages;
 			sourceTree = "<group>";
@@ -864,8 +824,6 @@
 				644D33D5289C070800C78ED2 /* ApplicationIdleTimerService.swift in Sources */,
 				648B1C2E2A41E4FF008EDB1C /* ClusteringSettingsView.swift in Sources */,
 				4BBE80262526DFB100D7EBDB /* RootViewModel.swift in Sources */,
-				64EE1AB2289B22E800FF301C /* RouteSearchDemoView.swift in Sources */,
-				64EE1AAF289B22E800FF301C /* RouteSearchSettingsDatePicker.swift in Sources */,
 				64226DFD26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift in Sources */,
 				64EE1ADA289B235200FF301C /* NavigatorDemoViewModel.swift in Sources */,
 				644D33BD289BF9E200C78ED2 /* MapMarkerView.swift in Sources */,
@@ -892,8 +850,6 @@
 				64A96D4426BC3BF000CC21A3 /* ClusterCardViewModel.swift in Sources */,
 				648B1C282A41B0A0008EDB1C /* MultiSelectionPickerView.swift in Sources */,
 				644D33D3289C022700C78ED2 /* SettingsFormTextField.swift in Sources */,
-				64EE1AAE289B22E800FF301C /* RoutePreviewListVC.swift in Sources */,
-				64EE1AB0289B22E800FF301C /* RouteSearchDemoViewModel.swift in Sources */,
 				B709915525FA72A600B2F1A5 /* Future+Helpers.swift in Sources */,
 				64EE1AD3289B235200FF301C /* FreeRoamSettings.swift in Sources */,
 				C4EA59672C7361C6005ED414 /* GraphicsOption.swift in Sources */,
@@ -907,7 +863,6 @@
 				4B27063524A3F24C00F12B48 /* AppDelegate.swift in Sources */,
 				C47F37302C04576E00FBC91C /* CalcPositionInfoView.swift in Sources */,
 				64EE1AD1289B235200FF301C /* NavigatorSettingsViewModel.swift in Sources */,
-				64EE1AAD289B22E800FF301C /* RouteDetailsVC.swift in Sources */,
 				6410A4502AE1BF570065C1BC /* CircleView.swift in Sources */,
 				B7B2E8DD26B2CBE0006DCE9E /* CustomGesturesDemoViewModel.swift in Sources */,
 				4B96EBDC2608C5780057C366 /* View+Helpers.swift in Sources */,
@@ -923,7 +878,6 @@
 				C47F37322C04576F00FBC91C /* CalcPositionMapObjects.swift in Sources */,
 				647301B32B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift in Sources */,
 				64EE1AA0289B22AA00FF301C /* CustomZoomControl.swift in Sources */,
-				64EE1AB1289B22E800FF301C /* RouteSearchSettingsView.swift in Sources */,
 				644D33B7289BF66F00C78ED2 /* FeedbackGenerator.swift in Sources */,
 				C4EA59692C736E69005ED414 /* StyleRow.swift in Sources */,
 				B7B2E8DE26B2CBE0006DCE9E /* CustomGesturesDemoView.swift in Sources */,
@@ -955,7 +909,6 @@
 				64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */,
 				644D33D2289C022700C78ED2 /* SettingsFormDisclosureButton.swift in Sources */,
 				C47F372A2C04575800FBC91C /* CalcPositionWays.swift in Sources */,
-				64EE1AAC289B22E800FF301C /* RouteView.swift in Sources */,
 				6410A4572AE1C45B0065C1BC /* NavigatorBetterRouteSettings.swift in Sources */,
 				644D33DB289C09C100C78ED2 /* TextFieldClearButton.swift in Sources */,
 				644D33DF289C0B0500C78ED2 /* TrafficRoute+Helpers.swift in Sources */,
@@ -988,7 +941,6 @@
 				64EE1ADB289B235200FF301C /* NavigatorTargetPointSearchOverlayView.swift in Sources */,
 				644D33CB289BFD0200C78ED2 /* RoadEventsDisplayFilterView.swift in Sources */,
 				4B27063724A3F24C00F12B48 /* SceneDelegate.swift in Sources */,
-				64EE1AAB289B22E800FF301C /* RouteViewModel.swift in Sources */,
 				6410A44E2AE1BF570065C1BC /* DetailsActionView.swift in Sources */,
 				6410A44D2AE1BF570065C1BC /* PolygonView.swift in Sources */,
 				6410A44A2AE1BF570065C1BC /* PolylineView.swift in Sources */,

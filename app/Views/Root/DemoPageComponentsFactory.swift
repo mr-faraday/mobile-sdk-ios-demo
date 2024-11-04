@@ -150,38 +150,38 @@ struct DemoPageComponentsFactory {
 		return ClusterCardView(viewModel: viewModel)
 	}
 
-	func makeRouteView(
-		show: Binding<Bool>,
-		transportType: TransportType,
-		carRouteSearchOptions: CarRouteSearchOptions,
-		publicTransportRouteSearchOptions: PublicTransportRouteSearchOptions,
-		truckRouteSearchOptions: TruckRouteSearchOptions,
-		taxiRouteSearchOptions: TaxiRouteSearchOptions,
-		bicycleRouteSearchOptions: BicycleRouteSearchOptions,
-		pedestrianRouteSearchOptions: PedestrianRouteSearchOptions
-	) -> some View {
-		let viewModel = RouteViewModel(
-			transportType: transportType,
-			carRouteSearchOptions: carRouteSearchOptions,
-			publicTransportRouteSearchOptions: publicTransportRouteSearchOptions,
-			truckRouteSearchOptions: truckRouteSearchOptions,
-			taxiRouteSearchOptions: taxiRouteSearchOptions,
-			bicycleRouteSearchOptions: bicycleRouteSearchOptions,
-			pedestrianRouteSearchOptions: pedestrianRouteSearchOptions,
-			sourceFactory: { [sdk = self.sdk] in
-				try! sdk.sourceFactory
-			},
-			routeEditorSourceFactory: { [context = self.context] routeEditor in
-				return RouteEditorSource(context: context, routeEditor: routeEditor)
-			},
-			routeEditorFactory: { [context = self.context] in
-				return RouteEditor(context: context)
-			},
-			map: self.mapFactory.map,
-			feedbackGenerator: FeedbackGenerator()
-		)
-		return RouteView(viewModel: viewModel, show: show, viewFactory: self)
-	}
+//	func makeRouteView(
+//		show: Binding<Bool>,
+//		transportType: TransportType,
+//		carRouteSearchOptions: CarRouteSearchOptions,
+//		publicTransportRouteSearchOptions: PublicTransportRouteSearchOptions,
+//		truckRouteSearchOptions: TruckRouteSearchOptions,
+//		taxiRouteSearchOptions: TaxiRouteSearchOptions,
+//		bicycleRouteSearchOptions: BicycleRouteSearchOptions,
+//		pedestrianRouteSearchOptions: PedestrianRouteSearchOptions
+//	) -> some View {
+//		let viewModel = RouteViewModel(
+//			transportType: transportType,
+//			carRouteSearchOptions: carRouteSearchOptions,
+//			publicTransportRouteSearchOptions: publicTransportRouteSearchOptions,
+//			truckRouteSearchOptions: truckRouteSearchOptions,
+//			taxiRouteSearchOptions: taxiRouteSearchOptions,
+//			bicycleRouteSearchOptions: bicycleRouteSearchOptions,
+//			pedestrianRouteSearchOptions: pedestrianRouteSearchOptions,
+//			sourceFactory: { [sdk = self.sdk] in
+//				try! sdk.sourceFactory
+//			},
+//			routeEditorSourceFactory: { [context = self.context] routeEditor in
+//				return RouteEditorSource(context: context, routeEditor: routeEditor)
+//			},
+//			routeEditorFactory: { [context = self.context] in
+//				return RouteEditor(context: context)
+//			},
+//			map: self.mapFactory.map,
+//			feedbackGenerator: FeedbackGenerator()
+//		)
+//		return RouteView(viewModel: viewModel, show: show, viewFactory: self)
+//	}
 
 	func makeNavigatorView(
 		navigationManager: NavigationManager,
@@ -205,13 +205,13 @@ struct DemoPageComponentsFactory {
 		)
 	}
 
-	func makeRoutePreviewListVC(routesInfo: RouteEditorRoutesInfo) -> RoutePreviewListVC {
-		let factory = try! self.sdk.makeNavigationViewFactory()
-		return RoutePreviewListVC(routesInfo: routesInfo, factory: factory)
-	}
-
-	func makeRouteDetailsVC(route: TrafficRoute) -> RouteDetailsVC {
-		let factory = try! self.sdk.makeNavigationViewFactory()
-		return RouteDetailsVC(route: route, factory: factory)
-	}
+//	func makeRoutePreviewListVC(routesInfo: RouteEditorRoutesInfo) -> RoutePreviewListVC {
+//		let factory = try! self.sdk.makeNavigationViewFactory()
+//		return RoutePreviewListVC(routesInfo: routesInfo, factory: factory)
+//	}
+//
+//	func makeRouteDetailsVC(route: TrafficRoute) -> RouteDetailsVC {
+//		let factory = try! self.sdk.makeNavigationViewFactory()
+//		return RouteDetailsVC(route: route, factory: factory)
+//	}
 }
