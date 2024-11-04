@@ -68,9 +68,6 @@
 		64AC48FC2A42E52600CB3C94 /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC48FB2A42E52600CB3C94 /* LanguageSettings.swift */; };
 		64C4FE662812E87F00CE8F6B /* Longitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4FE642812E87F00CE8F6B /* Longitude.swift */; };
 		64C4FE672812E87F00CE8F6B /* Latitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4FE652812E87F00CE8F6B /* Latitude.swift */; };
-		64EE1A9E289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9A289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift */; };
-		64EE1A9F289B22AA00FF301C /* CustomMapControlsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9B289B22AA00FF301C /* CustomMapControlsDemoView.swift */; };
-		64EE1AA0289B22AA00FF301C /* CustomZoomControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE1A9D289B22AA00FF301C /* CustomZoomControl.swift */; };
 		64F3382128B8C3F90018B7AD /* dgissdk.key in Resources */ = {isa = PBXBuildFile; fileRef = 64F3382028B8C3F90018B7AD /* dgissdk.key */; };
 		B709913925F9CBCF00B2F1A5 /* MapObjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709913825F9CBCF00B2F1A5 /* MapObjectCardView.swift */; };
 		B709914C25FA11CD00B2F1A5 /* MapObjectCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709914B25FA11CD00B2F1A5 /* MapObjectCardViewModel.swift */; };
@@ -183,9 +180,6 @@
 		64AC48FB2A42E52600CB3C94 /* LanguageSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSettings.swift; sourceTree = "<group>"; };
 		64C4FE642812E87F00CE8F6B /* Longitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Longitude.swift; sourceTree = "<group>"; };
 		64C4FE652812E87F00CE8F6B /* Latitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latitude.swift; sourceTree = "<group>"; };
-		64EE1A9A289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapControlsDemoViewModel.swift; sourceTree = "<group>"; };
-		64EE1A9B289B22AA00FF301C /* CustomMapControlsDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapControlsDemoView.swift; sourceTree = "<group>"; };
-		64EE1A9D289B22AA00FF301C /* CustomZoomControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomZoomControl.swift; sourceTree = "<group>"; };
 		64F3382028B8C3F90018B7AD /* dgissdk.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dgissdk.key; sourceTree = "<group>"; };
 		B709913825F9CBCF00B2F1A5 /* MapObjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectCardView.swift; sourceTree = "<group>"; };
 		B709914B25FA11CD00B2F1A5 /* MapObjectCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectCardViewModel.swift; sourceTree = "<group>"; };
@@ -378,24 +372,6 @@
 			path = ClusterCardView;
 			sourceTree = "<group>";
 		};
-		64EE1A99289B22AA00FF301C /* CustomMapControls */ = {
-			isa = PBXGroup;
-			children = (
-				64EE1A9A289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift */,
-				64EE1A9B289B22AA00FF301C /* CustomMapControlsDemoView.swift */,
-				64EE1A9C289B22AA00FF301C /* CustomZoomControl */,
-			);
-			path = CustomMapControls;
-			sourceTree = "<group>";
-		};
-		64EE1A9C289B22AA00FF301C /* CustomZoomControl */ = {
-			isa = PBXGroup;
-			children = (
-				64EE1A9D289B22AA00FF301C /* CustomZoomControl.swift */,
-			);
-			path = CustomZoomControl;
-			sourceTree = "<group>";
-		};
 		B709914A25FA0FD700B2F1A5 /* MapObjectCardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,7 +448,6 @@
 				64226DFA26B1B5ED0058E3D9 /* Clustering */,
 				647301AF2B7FEEB9005C3065 /* CopyrightSettings */,
 				B7B2E8D626B2CBDF006DCE9E /* CustomGestures */,
-				64EE1A99289B22AA00FF301C /* CustomMapControls */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
 			path = DemoPages;
@@ -677,7 +652,6 @@
 				644D33ED289C1C1C00C78ED2 /* SettingsFormTextField+RouteDistance.swift in Sources */,
 				C47F37322C04576F00FBC91C /* CalcPositionMapObjects.swift in Sources */,
 				647301B32B7FEEB9005C3065 /* CopyrightSettingsDemoViewModel.swift in Sources */,
-				64EE1AA0289B22AA00FF301C /* CustomZoomControl.swift in Sources */,
 				644D33B7289BF66F00C78ED2 /* FeedbackGenerator.swift in Sources */,
 				C4EA59692C736E69005ED414 /* StyleRow.swift in Sources */,
 				B7B2E8DE26B2CBE0006DCE9E /* CustomGesturesDemoView.swift in Sources */,
@@ -707,7 +681,6 @@
 				644D33A6289BF20800C78ED2 /* MapDataSource.swift in Sources */,
 				0991909625B96E1C00F4235B /* MapControl.swift in Sources */,
 				64A96D4326BC3BF000CC21A3 /* ClusterCardView.swift in Sources */,
-				64EE1A9E289B22AA00FF301C /* CustomMapControlsDemoViewModel.swift in Sources */,
 				B709914F25FA6B6F00B2F1A5 /* RenderedObjectInfo+Helpers.swift in Sources */,
 				644D33AA289BF29900C78ED2 /* PickerView.swift in Sources */,
 				644D33CF289C000C00C78ED2 /* Color+Palette.swift in Sources */,
@@ -720,7 +693,6 @@
 				B7D25ADD264BF4B600CC835A /* DemoPageListRow.swift in Sources */,
 				C47F37382C0457A600FBC91C /* CalcPositionDemoView.swift in Sources */,
 				644D33A2289BECFA00C78ED2 /* SettingsService.swift in Sources */,
-				64EE1A9F289B22AA00FF301C /* CustomMapControlsDemoView.swift in Sources */,
 				4BBE80302526FB0D00D7EBDB /* Container.swift in Sources */,
 				644D33E9289C1A2200C78ED2 /* SettingsViewModel.swift in Sources */,
 				647301B52B7FF2B1005C3065 /* MapTheme.swift in Sources */,

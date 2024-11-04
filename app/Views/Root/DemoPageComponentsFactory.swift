@@ -93,11 +93,11 @@ struct DemoPageComponentsFactory {
 		MapControl(controlFactory: self.mapFactory.mapControlFactory.makeZoomControl)
 	}
 
-	func makeCustomControl() -> some View {
-		MapControl(controlFactory: { [mapFactory = self.mapFactory] in
-			CustomZoomControl(map: mapFactory.map)
-		})
-	}
+//	func makeCustomControl() -> some View {
+//		MapControl(controlFactory: { [mapFactory = self.mapFactory] in
+//			CustomZoomControl(map: mapFactory.map)
+//		})
+//	}
 
 	func makeCompassControl() -> some View {
 		MapControl(

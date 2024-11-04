@@ -130,13 +130,13 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeCustomMapControlsDemoPage() throws -> some View {
-		let viewModel = CustomMapControlsDemoViewModel()
-		return CustomMapControlsDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
-		)
-	}
+//	private func makeCustomMapControlsDemoPage() throws -> some View {
+//		let viewModel = CustomMapControlsDemoViewModel()
+//		return CustomMapControlsDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: try self.makeMapFactory())
+//		)
+//	}
 
 //	private func makeMapThemeDemoPage() throws -> some View {
 //		let viewModel = MapThemeDemoViewModel()
