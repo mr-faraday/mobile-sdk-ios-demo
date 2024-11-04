@@ -16,7 +16,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             do {
-                let rootView = try self.container.makeRootView()
+                let mapFactory = try container.sdk.makeMapFactory(options: .default)
+                let viewModel = try MapObjectsIdentificationDemoViewModel(
+                    mapMarkerPresenter: self.makeMapMarkerPresenter(),
+                    map: mapFactory.map,
+                    mapSourceFactory: MapSourceFactory(context: container.sdk.context)
+                )
+                                
+                let rootView = try MapObjectsIdentificationDemoView(
+                    viewModel: viewModel,
+                    viewFactory: DemoPageComponentsFactory(
+                        sdk: container.sdk,
+                        context: container.sdk.context,
+                        mapFactory: mapFactory
+                    )
+                )
+
+                
+                
+                
                 window.rootViewController = UINavigationController(
                     rootViewController: UIHostingController(rootView: rootView)
                 )

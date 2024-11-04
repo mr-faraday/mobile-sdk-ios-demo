@@ -10,43 +10,6 @@ final class Container {
 		return container
 	}()
 
-//	private var applicationIdleTimerService: IApplicationIdleTimerService {
-//		UIApplication.shared
-//	}
-//	private lazy var settingsStorage: IKeyValueStorage = UserDefaults.standard
-//	private lazy var navigatorSettings: INavigatorSettings = NavigatorSettings(storage: self.settingsStorage)
-
-//	private lazy var settingsService: ISettingsService = {
-//		let service = SettingsService(
-//			storage: self.settingsStorage
-//		)
-//		service.onMuteOtherSoundsDidChange = { [weak self] value in
-//			guard
-//				let audioSettings = try? self?.sdk.audioSettings
-//			else {
-//				return
-//			}
-//			audioSettings.audioFocusPolicy = value ? .duck : .ignore
-//		}
-//		service.onNavigatorVoiceVolumeSourceDidChange = { [weak self] value in
-//			guard
-//				let audioSettings = try? self?.sdk.audioSettings
-//			else {
-//				return
-//			}
-//			audioSettings.volume = value
-//		}
-////		service.onCurrentLanguageDidChange = { [weak self] (Language) -> Void in
-////			self?.mapFactoryProvider.resetMapFactory()
-////		}
-//		return service
-//	}()
-
-//	private lazy var locationGeneratorPositioningQueue: DispatchQueue = DispatchQueue(
-//		label: "ru.2gis.sdk.app.positioning-queue",
-//		qos: .default
-//	)
-
 	private lazy var mapFactoryProvider = MapFactoryProvider(container: self.sdk, mapGesturesType: .default(.event))
 
 	private lazy var navigationService: NavigationService = NavigationService()
