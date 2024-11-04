@@ -26,28 +26,26 @@ class MapMarkerPresenter {
 	}
 
 	func showMarkerView(viewModel: MapObjectCardViewModel) {
-		viewModel.titleChangedCallback = { [weak self, position = viewModel.objectPosition] title, subtitle in
-			guard
-				let self = self,
-				let addMarkerViewCallback = self.addMarkerViewCallback
-			else {
-				return
-			}
+        guard
+//            let self = self,
+            let addMarkerViewCallback = self.addMarkerViewCallback
+        else {
+            return
+        }
 
-			UIViewPropertyAnimator(duration: Constants.animationDuration, curve: .easeOut, animations: {
-				let mapMarkerViewModel = MapMarkerViewModel(title: title, subtitle: subtitle)
-				let mapMarkerView = MapMarkerView(viewModel: mapMarkerViewModel)
-				let markerView = self.markerViewFactory(mapMarkerView, position)
+        UIViewPropertyAnimator(duration: Constants.animationDuration, curve: .easeOut, animations: {
+            let mapMarkerViewModel = MapMarkerViewModel(title: "sdfdf", subtitle: "asdfasdfasdf")
+            let mapMarkerView = MapMarkerView(viewModel: mapMarkerViewModel)
+            let markerView = self.markerViewFactory(mapMarkerView, viewModel.objectPosition)
 
-				markerView.tapHandler = { [weak markerView, weak self] in
-					if let marker = markerView {
-						self?.hide(markerView: marker)
-					}
-				}
+            markerView.tapHandler = { [weak markerView, weak self] in
+                if let marker = markerView {
+                    self?.hide(markerView: marker)
+                }
+            }
 
-				addMarkerViewCallback(markerView)
-			}).startAnimation()
-		}
+            addMarkerViewCallback(markerView)
+        }).startAnimation()
 	}
 
 	private func hide(markerView: IMarkerView) {
