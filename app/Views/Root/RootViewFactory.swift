@@ -7,7 +7,7 @@ final class RootViewFactory: ObservableObject {
 	private let locationManagerFactory: () -> LocationService
 //	private let settingsService: ISettingsService
 	private let mapProvider: IMapProvider
-	private let applicationIdleTimerService: IApplicationIdleTimerService
+//	private let applicationIdleTimerService: IApplicationIdleTimerService
 //	private let navigatorSettings: INavigatorSettings
 	private lazy var styleFactory: IStyleFactory = self.makeStyleFactory()
 
@@ -15,8 +15,8 @@ final class RootViewFactory: ObservableObject {
 		sdk: DGis.Container,
 		locationManagerFactory: @escaping () -> LocationService,
 //		settingsService: ISettingsService,
-		mapProvider: IMapProvider,
-		applicationIdleTimerService: IApplicationIdleTimerService
+		mapProvider: IMapProvider
+//		applicationIdleTimerService: IApplicationIdleTimerService
 //		navigatorSettings: INavigatorSettings
 	) throws {
 		self.sdk = sdk
@@ -24,7 +24,7 @@ final class RootViewFactory: ObservableObject {
 		self.locationManagerFactory = locationManagerFactory
 //		self.settingsService = settingsService
 		self.mapProvider = mapProvider
-		self.applicationIdleTimerService = applicationIdleTimerService
+//		self.applicationIdleTimerService = applicationIdleTimerService
 //		self.navigatorSettings = navigatorSettings
 	}
 

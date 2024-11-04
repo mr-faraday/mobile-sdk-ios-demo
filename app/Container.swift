@@ -10,10 +10,10 @@ final class Container {
 		return container
 	}()
 
-	private var applicationIdleTimerService: IApplicationIdleTimerService {
-		UIApplication.shared
-	}
-	private lazy var settingsStorage: IKeyValueStorage = UserDefaults.standard
+//	private var applicationIdleTimerService: IApplicationIdleTimerService {
+//		UIApplication.shared
+//	}
+//	private lazy var settingsStorage: IKeyValueStorage = UserDefaults.standard
 //	private lazy var navigatorSettings: INavigatorSettings = NavigatorSettings(storage: self.settingsStorage)
 
 //	private lazy var settingsService: ISettingsService = {
@@ -42,16 +42,16 @@ final class Container {
 //		return service
 //	}()
 
-	private lazy var locationGeneratorPositioningQueue: DispatchQueue = DispatchQueue(
-		label: "ru.2gis.sdk.app.positioning-queue",
-		qos: .default
-	)
+//	private lazy var locationGeneratorPositioningQueue: DispatchQueue = DispatchQueue(
+//		label: "ru.2gis.sdk.app.positioning-queue",
+//		qos: .default
+//	)
 
 	private lazy var mapFactoryProvider = MapFactoryProvider(container: self.sdk, mapGesturesType: .default(.event))
 
 	private lazy var navigationService: NavigationService = NavigationService()
 
-	private var localeManager: LocaleManager?
+//	private var localeManager: LocaleManager?
 
 	func makeRootView() throws -> some View {
 		let viewModel = self.makeRootViewModel()
@@ -70,8 +70,8 @@ final class Container {
 				LocationService()
 			},
 //			settingsService: self.settingsService,
-			mapProvider: self.mapFactoryProvider,
-			applicationIdleTimerService: self.applicationIdleTimerService
+			mapProvider: self.mapFactoryProvider
+//			applicationIdleTimerService: self.applicationIdleTimerService
 //			navigatorSettings: self.navigatorSettings
 		)
 		return viewFactory
