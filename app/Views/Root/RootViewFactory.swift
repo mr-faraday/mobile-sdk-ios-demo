@@ -90,18 +90,18 @@ final class RootViewFactory: ObservableObject {
 		)
 	}
 
-	private func makeVisibleAreaDetectionDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = VisibleAreaDetectionDemoViewModel(
-			map: mapFactory.map,
-			mapObjectManager: MapObjectManager(map: mapFactory.map),
-			mapSourceFactory: MapSourceFactory(context: self.context)
-		)
-		return VisibleAreaDetectionDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeVisibleAreaDetectionDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = VisibleAreaDetectionDemoViewModel(
+//			map: mapFactory.map,
+//			mapObjectManager: MapObjectManager(map: mapFactory.map),
+//			mapSourceFactory: MapSourceFactory(context: self.context)
+//		)
+//		return VisibleAreaDetectionDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeMapObjectsIdentificationDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()

@@ -134,8 +134,6 @@
 		B7D24AF32646D55700CC835A /* DemoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF22646D55700CC835A /* DemoPage.swift */; };
 		B7D24AF62646DDDA00CC835A /* CameraDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF52646DDDA00CC835A /* CameraDemoView.swift */; };
 		B7D24AF82646E35500CC835A /* CameraDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */; };
-		B7D251D3264A77C100CC835A /* VisibleAreaDetectionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D251D2264A77C100CC835A /* VisibleAreaDetectionDemoView.swift */; };
-		B7D251D5264A77D100CC835A /* VisibleAreaDetectionDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D251D4264A77D100CC835A /* VisibleAreaDetectionDemoViewModel.swift */; };
 		B7D25ACC264B970100CC835A /* MapObjectsIdentificationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */; };
 		B7D25ACE264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */; };
 		B7D25AD0264BD2DE00CC835A /* DemoPageComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */; };
@@ -298,8 +296,6 @@
 		B7D24AF22646D55700CC835A /* DemoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPage.swift; sourceTree = "<group>"; };
 		B7D24AF52646DDDA00CC835A /* CameraDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDemoView.swift; sourceTree = "<group>"; };
 		B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDemoViewModel.swift; sourceTree = "<group>"; };
-		B7D251D2264A77C100CC835A /* VisibleAreaDetectionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleAreaDetectionDemoView.swift; sourceTree = "<group>"; };
-		B7D251D4264A77D100CC835A /* VisibleAreaDetectionDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleAreaDetectionDemoViewModel.swift; sourceTree = "<group>"; };
 		B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoView.swift; sourceTree = "<group>"; };
 		B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectsIdentificationDemoViewModel.swift; sourceTree = "<group>"; };
 		B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPageComponentsFactory.swift; sourceTree = "<group>"; };
@@ -723,7 +719,6 @@
 				644D33BF289BFD0100C78ED2 /* RoadEvents */,
 				64EE1AA1289B22E800FF301C /* RouteSearch */,
 				64EE1AB3289B232800FF301C /* TerritoryManager */,
-				B7D251D1264A6ED200CC835A /* VisibleAreaDetection */,
 			);
 			path = DemoPages;
 			sourceTree = "<group>";
@@ -776,15 +771,6 @@
 				B7D24AF72646E35500CC835A /* CameraDemoViewModel.swift */,
 			);
 			path = Camera;
-			sourceTree = "<group>";
-		};
-		B7D251D1264A6ED200CC835A /* VisibleAreaDetection */ = {
-			isa = PBXGroup;
-			children = (
-				B7D251D2264A77C100CC835A /* VisibleAreaDetectionDemoView.swift */,
-				B7D251D4264A77D100CC835A /* VisibleAreaDetectionDemoViewModel.swift */,
-			);
-			path = VisibleAreaDetection;
 			sourceTree = "<group>";
 		};
 		B7D25ACA264B96E500CC835A /* MapObjectsIdentification */ = {
@@ -948,8 +934,6 @@
 				B7B2E8DD26B2CBE0006DCE9E /* CustomGesturesDemoViewModel.swift in Sources */,
 				4B96EBDC2608C5780057C366 /* View+Helpers.swift in Sources */,
 				4BBE7E2025264F2B00D7EBDB /* MapView.swift in Sources */,
-				B7D251D5264A77D100CC835A /* VisibleAreaDetectionDemoViewModel.swift in Sources */,
-				B7D251D3264A77C100CC835A /* VisibleAreaDetectionDemoView.swift in Sources */,
 				B7370710266D04D30043C0FA /* Button+Factory.swift in Sources */,
 				B7D24AF32646D55700CC835A /* DemoPage.swift in Sources */,
 				644D33A0289BECE800C78ED2 /* IMapSourceFactory.swift in Sources */,
