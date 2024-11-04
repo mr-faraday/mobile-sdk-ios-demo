@@ -146,17 +146,17 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 
-	private func makeFpsDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = FpsDemoViewModel(
-			map: mapFactory.map,
-			energyConsumption: mapFactory.energyConsumption
-		)
-		return FpsDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeFpsDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = FpsDemoViewModel(
+//			map: mapFactory.map,
+//			energyConsumption: mapFactory.energyConsumption
+//		)
+//		return FpsDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 	private func makeClusteringDemoPage() throws -> some View {
 		let mapFactory = try self.makeMapFactory()

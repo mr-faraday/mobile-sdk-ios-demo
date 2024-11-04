@@ -26,8 +26,6 @@
 		641B4462289D12F500A0DEE7 /* FullSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 641B4461289D12F500A0DEE7 /* FullSDK */; };
 		64226DFD26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */; };
 		64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */; };
-		64226E0226B1B5F70058E3D9 /* FpsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226E0026B1B5F70058E3D9 /* FpsDemoView.swift */; };
-		64226E0326B1B5F70058E3D9 /* FpsDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226E0126B1B5F70058E3D9 /* FpsDemoViewModel.swift */; };
 		644D33A0289BECE800C78ED2 /* IMapSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D339F289BECE800C78ED2 /* IMapSourceFactory.swift */; };
 		644D33A2289BECFA00C78ED2 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A1289BECFA00C78ED2 /* SettingsService.swift */; };
 		644D33A6289BF20800C78ED2 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D33A3289BF20800C78ED2 /* MapDataSource.swift */; };
@@ -143,8 +141,6 @@
 		6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueAnimator.swift; sourceTree = "<group>"; };
 		64226DFB26B1B5ED0058E3D9 /* ClusteringDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoViewModel.swift; sourceTree = "<group>"; };
 		64226DFC26B1B5ED0058E3D9 /* ClusteringDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusteringDemoView.swift; sourceTree = "<group>"; };
-		64226E0026B1B5F70058E3D9 /* FpsDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FpsDemoView.swift; sourceTree = "<group>"; };
-		64226E0126B1B5F70058E3D9 /* FpsDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FpsDemoViewModel.swift; sourceTree = "<group>"; };
 		644D339F289BECE800C78ED2 /* IMapSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMapSourceFactory.swift; sourceTree = "<group>"; };
 		644D33A1289BECFA00C78ED2 /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		644D33A3289BF20800C78ED2 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
@@ -335,15 +331,6 @@
 			path = Clustering;
 			sourceTree = "<group>";
 		};
-		64226DFF26B1B5F70058E3D9 /* Fps */ = {
-			isa = PBXGroup;
-			children = (
-				64226E0026B1B5F70058E3D9 /* FpsDemoView.swift */,
-				64226E0126B1B5F70058E3D9 /* FpsDemoViewModel.swift */,
-			);
-			path = Fps;
-			sourceTree = "<group>";
-		};
 		644D33AD289BF3B200C78ED2 /* NavigatorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,7 +473,6 @@
 				647301AF2B7FEEB9005C3065 /* CopyrightSettings */,
 				B7B2E8D626B2CBDF006DCE9E /* CustomGestures */,
 				64EE1A99289B22AA00FF301C /* CustomMapControls */,
-				64226DFF26B1B5F70058E3D9 /* Fps */,
 				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
 			);
 			path = DemoPages;
@@ -706,12 +692,10 @@
 				644D33E8289C1A2200C78ED2 /* SettingsView.swift in Sources */,
 				B7B2E8DB26B2CBE0006DCE9E /* CustomMapGestureView.swift in Sources */,
 				644D33AC289BF2B700C78ED2 /* IKeyValueStorage.swift in Sources */,
-				64226E0226B1B5F70058E3D9 /* FpsDemoView.swift in Sources */,
 				B7B2E8E026B2CDD9006DCE9E /* LazyView.swift in Sources */,
 				648B1C2A2A41B0A8008EDB1C /* WeekTimePickerView.swift in Sources */,
 				648B1C2C2A41D5FD008EDB1C /* ErrorViewController.swift in Sources */,
 				647301B22B7FEEB9005C3065 /* CopyrightSettingsDemoView.swift in Sources */,
-				64226E0326B1B5F70058E3D9 /* FpsDemoViewModel.swift in Sources */,
 				648B1C262A41A84A008EDB1C /* ObjectType.swift in Sources */,
 				B7D24AE92646D15C00CC835A /* TouchUpRecognizer.swift in Sources */,
 				64226DFE26B1B5ED0058E3D9 /* ClusteringDemoView.swift in Sources */,
