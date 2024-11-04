@@ -187,17 +187,17 @@ final class RootViewFactory: ObservableObject {
 //		)
 //	}
 	
-	private func makeCalcPositionDemoPage() throws -> some View {
-		let mapFactory = try self.makeMapFactory()
-		let viewModel = CalcPositionDemoViewModel(
-			map: mapFactory.map,
-			imageFactory: self.makeImageFactory()
-		)
-		return CalcPositionDemoView(
-			viewModel: viewModel,
-			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
-		)
-	}
+//	private func makeCalcPositionDemoPage() throws -> some View {
+//		let mapFactory = try self.makeMapFactory()
+//		let viewModel = CalcPositionDemoViewModel(
+//			map: mapFactory.map,
+//			imageFactory: self.makeImageFactory()
+//		)
+//		return CalcPositionDemoView(
+//			viewModel: viewModel,
+//			viewFactory: self.makeDemoPageComponentsFactory(mapFactory: mapFactory)
+//		)
+//	}
 
 //	private func makeTerritoryManagerDemoView() throws -> some View {
 //		let mapFactory = try self.makeMapFactory()
