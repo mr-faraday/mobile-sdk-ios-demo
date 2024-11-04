@@ -26,26 +26,21 @@ class ViewController: UIViewController {
         view.addSubview(mapFactory.mapView)
         mapFactory.mapView.frame = view.bounds
         
-        // Позиция на карте, к которой прикрепится view
         let position = GeoPointWithElevation(point: GeoPoint(latitude: 55.767701, longitude: 37.729146))
-        // Точка внутри view, к которой будет привязана координата position
-        let anchor = DGis.Anchor(x: 0, y: 0)
-        // Смещение в пикселях по осям
-        let offsetX: CGFloat = 0.0
-        let offsetY: CGFloat = 0.0
         
         let redSquare = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         redSquare.backgroundColor = UIColor.red
-
-        let viewFactory = sdk.markerViewFactory.make(
-            view: redSquare,
-            position : position,
-            anchor: anchor,
-            offsetX: offsetX,
-            offsetY: offsetY
+        
+        let markerView = MapMarkerView(title: "sdfsd", subtitle: "xcvxcv")
+        let view = sdk.markerViewFactory.make(
+            view: markerView,
+            position: position,
+            anchor: Anchor(),
+            offsetX: 0.0,
+            offsetY: 0.0
         )
         
-        mapFactory.markerViewOverlay.add(markerView: viewFactory)
+        mapFactory.markerViewOverlay.add(markerView: view)
     }
 }
 
