@@ -174,7 +174,6 @@
 				648B1C2B2A41D5FD008EDB1C /* ErrorViewController.swift */,
 				4B1354DB24BCCDC7004E8158 /* NativeApp.entitlements */,
 				4B27063624A3F24C00F12B48 /* SceneDelegate.swift */,
-				B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */,
 				B709914D25FA6B1000B2F1A5 /* Extensions */,
 				B7D24AEC2646D40900CC835A /* Models */,
 				B7D236C12643E13400CC835A /* Views */,
@@ -256,19 +255,15 @@
 		B7D236C12643E13400CC835A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B7D236C22643E14700CC835A /* DemoPages */,
 				4BBE822C2527422000D7EBDB /* Map */,
 				B7D24AE72646D14700CC835A /* ViewModifiers */,
+				644D33B8289BF9E200C78ED2 /* MapMarkerView */,
+				B709914A25FA0FD700B2F1A5 /* MapObjectCardView */,
+				B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */,
+				B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */,
+				B7D25ACF264BD2DE00CC835A /* DemoPageComponentsFactory.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B7D236C22643E14700CC835A /* DemoPages */ = {
-			isa = PBXGroup;
-			children = (
-				B7D25ACA264B96E500CC835A /* MapObjectsIdentification */,
-			);
-			path = DemoPages;
 			sourceTree = "<group>";
 		};
 		B7D24AE72646D14700CC835A /* ViewModifiers */ = {
@@ -304,17 +299,6 @@
 				6410A45A2AE1C5870065C1BC /* ValueAnimator.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B7D25ACA264B96E500CC835A /* MapObjectsIdentification */ = {
-			isa = PBXGroup;
-			children = (
-				644D33B8289BF9E200C78ED2 /* MapMarkerView */,
-				B709914A25FA0FD700B2F1A5 /* MapObjectCardView */,
-				B7D25ACB264B970100CC835A /* MapObjectsIdentificationDemoView.swift */,
-				B7D25ACD264B971300CC835A /* MapObjectsIdentificationDemoViewModel.swift */,
-			);
-			path = MapObjectsIdentification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
